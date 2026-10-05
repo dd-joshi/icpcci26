@@ -184,6 +184,12 @@
     if (state.track && paper.track !== state.track) return false;
     if (state.room && session.room !== state.room) return false;
     if (!state.query) return true;
+
+    // A numeric query is a paper-ID lookup. This prevents a search such as
+    // "30" from also matching every session whose time contains ":30".
+    const paperIdQuery = state.query.replace(/^#/, "");
+    if (/^\d+$/.test(paperIdQuery)) return String(paper.paperId) === paperIdQuery;
+
     const haystack = [paper.paperId, paper.title, paper.authors, paper.track, session.sessionNumber, session.title, session.room, session.dateLabel, session.slot]
       .join(" ").toLowerCase();
     return haystack.includes(state.query);

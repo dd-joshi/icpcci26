@@ -109,6 +109,8 @@ Add the paper inside the correct session's `papers` array:
 
 Paper and session totals are calculated automatically.
 
+Numeric searches are treated as exact paper-ID searches. For example, both `30` and `#30` show only paper ID 30. Text searches continue to match titles, authors, tracks, sessions, rooms, and dates.
+
 ## Validate an update
 
 Node.js is the only tool required for automated validation:
