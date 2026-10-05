@@ -7,9 +7,10 @@
  *
  * SCHEDULE AUTHORITY (5 OCTOBER 2026)
  * Sessions, rooms, paper allocation, and paper order follow the organizer's
- * “4ICPCCI 2026 - Technical Program - Print.pdf”. Paper 237 intentionally uses
- * “Minimized-Switch” per the site owner's explicit correction. Do not regroup
- * papers or change that wording without a newer organizer instruction.
+ * “4ICPCCI 2026 - Technical Program - Print.pdf”, with explicit owner updates:
+ * paper 224 is in Session 8 on 9 October and its author is P, Elangovan*;
+ * paper 237 intentionally uses “Minimized-Switch”. Do not override these
+ * corrections without a newer organizer instruction.
  * See ../README.md for examples and the validation checklist.
  */
 window.ICPCCI_DATA = {
@@ -41,7 +42,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "5 October 2026, 7:21 PM IST"
+    "lastUpdated": "5 October 2026, 7:34 PM IST"
   },
   "announcements": [],
   "guests": [],
@@ -398,14 +399,6 @@ window.ICPCCI_DATA = {
           "track": "EV Technology - I",
           "startTime": "2:45 PM",
           "endTime": "3:00 PM"
-        },
-        {
-          "paperId": 224,
-          "title": "Design-Oriented Performance Evaluation of Positive Output Luo Converters for High-Gain DC–DC Applications",
-          "authors": "Authors not listed in the supplied technical program",
-          "track": "EV Technology - I",
-          "startTime": "3:00 PM",
-          "endTime": "3:15 PM"
         }
       ]
     },
@@ -717,6 +710,14 @@ window.ICPCCI_DATA = {
           "track": "Microgrid & Smartgrids",
           "startTime": "10:15 AM",
           "endTime": "10:30 AM"
+        },
+        {
+          "paperId": 224,
+          "title": "Design-Oriented Performance Evaluation of Positive Output Luo Converters for High-Gain DC–DC Applications",
+          "authors": "P, Elangovan*",
+          "track": "Microgrid & Smartgrids",
+          "startTime": "10:30 AM",
+          "endTime": "10:45 AM"
         }
       ]
     },
