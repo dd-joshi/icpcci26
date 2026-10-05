@@ -15,10 +15,12 @@ The page remains fully static. There is no database, build step, or runtime back
 
 ## Current technical-program authority
 
-The theme-based session names, rooms, paper allocation, and paper sequence currently follow the organizer-supplied PDF `4ICPCCI 2026 - Technical Program - Print.pdf`, dated 5 October 2026. The website assigns 15-minute presentation times in the listed paper order.
+The live technical program contains **72 unique papers in 10 theme-based sessions**. Session names, rooms, chairs, paper allocation, and paper sequence follow the organizer-supplied workbook `sessions_261005 (1).xlsx`, dated 5 October 2026. Rows that only say a paper was moved are routing notes and are not counted as presentations. Complete author lists for papers 15, 17, 97, 210, 221, and 257 come from the accepted-paper export `Papers (7).xlsx`. The website assigns 15-minute presentation times in the listed paper order.
 
 - Keep paper 237 titled **“Design and Performance Analysis of a Minimized-Switch Multilevel Inverter with Advanced PWM Control for Grid-Connected Renewable Energy Applications”** unless the site owner supplies a newer correction.
 - The site owner moved paper 224 to Session 8 on 9 October, at 10:30–10:45 AM, and confirmed its author as **P, Elangovan\***. This explicit correction overrides its earlier PDF placement in Session 3.
+- Session 4 is titled **“AI for Healthcare”**.
+- Papers 225, 23, and 247 are assigned only to Sessions 8, 3, and 9 respectively. Do not recreate their routing-note rows as duplicate presentations.
 - The site owner replaced every L205 session venue with **S401** and set **S401** as the venue for the Opening Ceremony and IEEE Student Branch Inauguration.
 - Do not regroup papers by their older discipline labels. The current public program uses the theme-based session titles stored on each session and paper.
 
@@ -108,7 +110,7 @@ Add the paper inside the correct session's `papers` array:
   "paperId": 999,
   "title": "Paper title",
   "authors": "Author One; Author Two",
-  "track": "AI/ML",
+  "track": "AI for Healthcare",
   "startTime": "3:00 PM",
   "endTime": "3:15 PM",
   "visible": true,
@@ -118,7 +120,20 @@ Add the paper inside the correct session's `papers` array:
 
 Paper and session totals are calculated automatically.
 
+Always enter the **complete author list** from an authoritative submission export. Keep the source punctuation and mark the corresponding author with `*` when the source does so. Do not shorten the list to the registered or presenting author.
+
 Numeric searches are treated as exact paper-ID searches. For example, both `30` and `#30` show only paper ID 30. Text searches continue to match titles, authors, tracks, sessions, rooms, and dates.
+
+## Print one session for a notice board
+
+The regular website and the notice-board printout use the same schedule data; there is no separate print page to maintain.
+
+1. Open **Technical program**.
+2. Choose one value under **Session theme**. Each of the 10 themes identifies one session.
+3. Select **Print Session _n_**, or press **Ctrl+P**.
+4. Keep the paper size at **A4** and orientation at **Landscape**.
+
+The print layout includes the session number and theme, date, time, venue, session chairs, paper sequence, paper ID, title, and complete author list. Other active search, day, and room filters are temporarily ignored while the selected session is printed, then restored after printing.
 
 ## Validate an update
 
@@ -128,7 +143,7 @@ Node.js is the only tool required for automated validation:
 npm test
 ```
 
-The validator checks syntax, required fields, duplicate paper IDs, local asset paths, HTML file references, and removed print-page artifacts.
+The validator checks syntax, required fields, session-chair records, duplicate paper IDs, local asset paths, HTML file references, and removed legacy print-page artifacts.
 
 For a browser preview from this folder:
 
@@ -157,12 +172,12 @@ Before changing the site:
 1. Read this file and `data/schedule-data.js` completely.
 2. Treat supplied event details as authoritative. Do not invent names, titles, dates, rooms, links, or affiliations.
 3. Make routine content edits only in `data/schedule-data.js`.
-4. Preserve `paperId` values and check for duplicates.
-5. Keep a session and its matching agenda entry consistent.
+4. Preserve `paperId` values, complete author lists, and check for duplicates.
+5. Keep a session, its chairs, and its matching agenda entry consistent.
 6. Use relative asset paths and meaningful image alternative text.
 7. Update `conference.lastUpdated` after a public content change.
 8. Run `npm test` after every edit.
 9. Perform a browser check when markup, rendering logic, or styles change.
-10. Do not recreate the removed print page or print-specific assets unless the site owner explicitly requests them.
+10. Maintain the current in-page A4 landscape print layout. Do not create a separate print page or duplicate schedule data.
 
 If a requested section does not exist in the data model, add its data to `data/schedule-data.js`, add an empty structural container to `index.html`, render it safely in `assets/app.js`, document it here, and validate it in `scripts/validate-data.js`.

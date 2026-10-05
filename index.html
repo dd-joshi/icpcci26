@@ -74,14 +74,15 @@
           <select id="dayFilter"><option value="">Both days</option></select>
         </label>
         <label>
-          <span>Track</span>
-          <select id="trackFilter"><option value="">All tracks</option></select>
+          <span>Session theme</span>
+          <select id="trackFilter"><option value="">All themes</option></select>
         </label>
         <label>
           <span>Room</span>
           <select id="roomFilter"><option value="">All rooms</option></select>
         </label>
         <button class="clear-button" id="clearFilters" type="button">Clear filters</button>
+        <button class="print-button" id="printSession" type="button" disabled>Print selected theme</button>
       </div>
 
       <div class="results-summary" aria-live="polite">
@@ -90,6 +91,9 @@
       </div>
 
       <div id="sessionList" class="session-list"></div>
+      <div class="print-only print-selection-message">
+        Select one session theme on the website before printing its notice-board schedule.
+      </div>
       <div id="emptyState" class="empty-state" hidden>
         <strong>No matching papers</strong>
         <p>Try a paper ID, a shorter title word, or clear one of the filters.</p>

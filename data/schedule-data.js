@@ -6,12 +6,12 @@
  * number. Set `visible: false` to hide an item without deleting it.
  *
  * SCHEDULE AUTHORITY (5 OCTOBER 2026)
- * Sessions, rooms, paper allocation, and paper order follow the organizer's
- * “4ICPCCI 2026 - Technical Program - Print.pdf”, with explicit owner updates:
- * paper 224 is in Session 8 on 9 October and its author is P, Elangovan*;
- * paper 237 intentionally uses “Minimized-Switch”; S401 replaces L205 and is
- * the venue for inauguration events. Do not override these corrections without
- * a newer organizer instruction.
+ * The 72-paper allocation, order, chairs, and venues follow sessions_261005
+ * with moved-paper placeholders removed. Complete author lists for the six
+ * additions come from the accepted-paper export Papers (7).xlsx.
+ * Owner corrections override those files: S4 is “AI for Healthcare”; paper 224
+ * stays in S8 with its approved title; paper 237 uses “Minimized-Switch”; and
+ * S401 replaces L205. Do not override these without a newer owner instruction.
  * See ../README.md for examples and the validation checklist.
  */
 window.ICPCCI_DATA = {
@@ -43,7 +43,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "5 October 2026, 7:38 PM IST"
+    "lastUpdated": "6 October 2026, 12:07 AM IST"
   },
   "announcements": [],
   "guests": [],
@@ -226,54 +226,77 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 1 — 8 October 2026",
       "slot": "1:30–3:30 PM",
       "room": "L305",
+      "chairs": [
+        {
+          "name": "Dr. Ajay Kumar Vyas",
+          "affiliation": "Adani University"
+        },
+        {
+          "name": "Prof. Nitesh Chouhan",
+          "affiliation": "MLV Textile & Engineering College, Bhilwara",
+          "online": true
+        },
+        {
+          "name": "Dr. Ashish Soni",
+          "affiliation": "IITRAM"
+        }
+      ],
       "papers": [
+        {
+          "paperId": 17,
+          "title": "ObstacleVision: Uncovering Road Congestion from Sidewalk Blockage",
+          "authors": "Kanudawala, Zeel*; Devani, Zenisha; Thakar, Rohan; Trivedi, Himani",
+          "track": "AI for Vision, Healthcare and Cybersecurity",
+          "startTime": "1:30 PM",
+          "endTime": "1:45 PM"
+        },
         {
           "paperId": 49,
           "title": "Adaptive Image Based Visual Servoing for Precision Alignment in Remote Maintenance of Fusion Machines",
           "authors": "Rastogi, Naveen*; Gupta, Dr. Suryakant; Gotewal, Krishan",
           "track": "AI for Vision, Healthcare and Cybersecurity",
-          "startTime": "1:30 PM",
-          "endTime": "1:45 PM"
+          "startTime": "1:45 PM",
+          "endTime": "2:00 PM"
         },
         {
           "paperId": 87,
           "title": "Deepfake Audio Detection Using MFCC Features and CNN Classification",
           "authors": "Chaurasiya, Rahul*; Pradhan, Priyadarshini ; Pakide, Vishala; Pawaiya, Rishabh Pratap Singh",
           "track": "AI for Vision, Healthcare and Cybersecurity",
-          "startTime": "1:45 PM",
-          "endTime": "2:00 PM"
+          "startTime": "2:00 PM",
+          "endTime": "2:15 PM"
         },
         {
           "paperId": 94,
           "title": "Towards Reliable Deepfake Detection and Proactive Prevention",
           "authors": "Cholke, Puja *; Malve, Aatish; Narwade, Ram ; Koli , Kanupriya ; Makanikar, Aarya ; Lakhotiya, Tanisha",
           "track": "AI for Vision, Healthcare and Cybersecurity",
-          "startTime": "2:00 PM",
-          "endTime": "2:15 PM"
+          "startTime": "2:15 PM",
+          "endTime": "2:30 PM"
         },
         {
           "paperId": 139,
           "title": "A Self-Optimizing Cluster-Specific Bayesian Ensemble Intrusion Detection System for Evolving Network Threats",
           "authors": "Rani, D. Sandhya*; Suresh , D; Jabbar , M.A",
           "track": "AI for Vision, Healthcare and Cybersecurity",
-          "startTime": "2:15 PM",
-          "endTime": "2:30 PM"
+          "startTime": "2:30 PM",
+          "endTime": "2:45 PM"
         },
         {
           "paperId": 148,
           "title": "Segmentation Guided Explainable Deep Learning Framework for Robust Melanoma Detection Using Multi-Source Dermoscopic Images",
           "authors": "BEEDA, SUKUMAR*; M, Rajasekar; Gopalan, Anitha",
           "track": "AI for Vision, Healthcare and Cybersecurity",
-          "startTime": "2:30 PM",
-          "endTime": "2:45 PM"
+          "startTime": "2:45 PM",
+          "endTime": "3:00 PM"
         },
         {
           "paperId": 214,
           "title": "Lesion-Level Gastric Cancer Detection in Endoscopic Imaging Using Enhanced YOLOv11 Model",
           "authors": "SINGH, SUNAINA*",
           "track": "AI for Vision, Healthcare and Cybersecurity",
-          "startTime": "2:45 PM",
-          "endTime": "3:00 PM"
+          "startTime": "3:00 PM",
+          "endTime": "3:15 PM"
         }
       ]
     },
@@ -285,6 +308,17 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 1 — 8 October 2026",
       "slot": "1:30–3:30 PM",
       "room": "L405",
+      "chairs": [
+        {
+          "name": "Dr. Rajesh Kumar Nema",
+          "affiliation": "IES University",
+          "online": true
+        },
+        {
+          "name": "Dr. Dharmendra Sadhwani",
+          "affiliation": "IITRAM"
+        }
+      ],
       "papers": [
         {
           "paperId": 27,
@@ -311,36 +345,44 @@ window.ICPCCI_DATA = {
           "endTime": "2:15 PM"
         },
         {
+          "paperId": 108,
+          "title": "Performance Evaluation of a Level-3 DWT-Based Digital Image Watermarking under Speckle Noise Attacks",
+          "authors": "Gahalod, Dr. Laxminarayan*",
+          "track": "Communication, Antenna and Industrial Network Technologies",
+          "startTime": "2:15 PM",
+          "endTime": "2:30 PM"
+        },
+        {
           "paperId": 151,
           "title": "DARA-IDS: Dual Attention with Recalibration Architecture for Network Intrusion Detection",
           "authors": "Gopi, Pranay*; Paka, Pranay; Rasula, Rohith; Rani, D. Sandhya; Jabbar, M.A.",
           "track": "Communication, Antenna and Industrial Network Technologies",
-          "startTime": "2:15 PM",
-          "endTime": "2:30 PM"
+          "startTime": "2:30 PM",
+          "endTime": "2:45 PM"
         },
         {
           "paperId": 193,
           "title": "Compact THz MIMO Antenna Array with Enhanced Isolation and Radiation Efficiency for IoT Wireless Networks",
           "authors": "Koundal, Poonam*",
           "track": "Communication, Antenna and Industrial Network Technologies",
-          "startTime": "2:30 PM",
-          "endTime": "2:45 PM"
+          "startTime": "2:45 PM",
+          "endTime": "3:00 PM"
         },
         {
           "paperId": 194,
           "title": "Single-Band CPW-Fed S-Slot Antenna for Implantable and Wearable Biomedical Devices",
           "authors": "SINGH, SUNAINA*",
           "track": "Communication, Antenna and Industrial Network Technologies",
-          "startTime": "2:45 PM",
-          "endTime": "3:00 PM"
-        },
-        {
-          "paperId": 108,
-          "title": "Performance Evaluation of a Level-3 DWT-Based Digital Image Watermarking under Speckle Noise Attacks",
-          "authors": "Gahalod, Dr. Laxminarayan*",
-          "track": "Communication, Antenna and Industrial Network Technologies",
           "startTime": "3:00 PM",
           "endTime": "3:15 PM"
+        },
+        {
+          "paperId": 210,
+          "title": "Miniaturised Double-Band THz MIMO Antenna for Wireless Networks",
+          "authors": "Koundal, Poonam*",
+          "track": "Communication, Antenna and Industrial Network Technologies",
+          "startTime": "3:15 PM",
+          "endTime": "3:30 PM"
         }
       ]
     },
@@ -352,6 +394,17 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 1 — 8 October 2026",
       "slot": "1:30–3:30 PM",
       "room": "S401",
+      "chairs": [
+        {
+          "name": "Dr. Soni Changlani",
+          "affiliation": "LNCT Bhopal",
+          "online": true
+        },
+        {
+          "name": "Dr. Kshitij Bhargave",
+          "affiliation": ""
+        }
+      ],
       "papers": [
         {
           "paperId": 32,
@@ -386,17 +439,17 @@ window.ICPCCI_DATA = {
           "endTime": "2:30 PM"
         },
         {
-          "paperId": 225,
-          "title": "A Bidirectional DC-DC Converter With High Voltage Gain and Common Ground Feature",
-          "authors": "PANDA, KAIBALYA*; Patel, Vedant; Singhal, Jinisha; Varshney, Shreekant; Sharma, Preeti; Shukla, Vipin",
+          "paperId": 175,
+          "title": "Decentralized Bidirectional Electric Vehicle Charging Using Vehicle-to-Vehicle and Vehicle-to-Grid Technologies",
+          "authors": "R K , Ragavapriya; P, Maruthupandi; R, Krishnakumar; S S , Moneesha; K, Kishore; MAHATO, DIPENDRA*",
           "track": "EV Technology - I",
           "startTime": "2:30 PM",
           "endTime": "2:45 PM"
         },
         {
-          "paperId": 175,
-          "title": "Decentralized Bidirectional Electric Vehicle Charging Using Vehicle-to-Vehicle and Vehicle-to-Grid Technologies",
-          "authors": "R K , Ragavapriya; P, Maruthupandi; R, Krishnakumar; S S , Moneesha; K, Kishore; MAHATO, DIPENDRA*",
+          "paperId": 23,
+          "title": "Bilevel Stackelberg Optimization of a Microgrid-Integrated Virtual Power Plant with Hydrogen Storage",
+          "authors": "Pandya, Vishal*",
           "track": "EV Technology - I",
           "startTime": "2:45 PM",
           "endTime": "3:00 PM"
@@ -405,60 +458,78 @@ window.ICPCCI_DATA = {
     },
     {
       "sessionNumber": 4,
-      "title": "AI for Healthcare and Precision Agriculture",
-      "track": "AI for Healthcare and Precision Agriculture",
+      "title": "AI for Healthcare",
+      "track": "AI for Healthcare",
       "date": "2026-10-08",
       "dateLabel": "Day 1 — 8 October 2026",
       "slot": "3:45–5:45 PM",
       "room": "L305",
+      "chairs": [
+        {
+          "name": "Dr. Kamal Kant Hiran",
+          "affiliation": "Sir Padampat Singhania University"
+        },
+        {
+          "name": "Dr. Raghavendra Bhalerao",
+          "affiliation": "IITRAM"
+        }
+      ],
       "papers": [
+        {
+          "paperId": 15,
+          "title": "Heart Disease Prediction Using Deep Learning Techniques",
+          "authors": "M, Baskar*; Polu, Lavanya",
+          "track": "AI for Healthcare",
+          "startTime": "3:45 PM",
+          "endTime": "4:00 PM"
+        },
         {
           "paperId": 121,
           "title": "An Explainable Hybrid Ensemble Learning Framework for Cardiovascular Disease Risk Prediction",
           "authors": "Pashikanti, Rajesh *; Bhanuse, Vijaykumar; Bhad, Arjun; Bhingare, Laksh ; Bhalerao, Bandhan",
-          "track": "AI for Healthcare and Precision Agriculture",
-          "startTime": "3:45 PM",
-          "endTime": "4:00 PM"
+          "track": "AI for Healthcare",
+          "startTime": "4:00 PM",
+          "endTime": "4:15 PM"
         },
         {
           "paperId": 248,
           "title": "Pneumonia Detection in Imbalanced Chest X-rays: A Comparative Analysis of Loss Functions across CNN and Transformer Models",
           "authors": "Pashikanti, Rajesh*; Nandeshwar, Vikas; Mamarde, Aditya; Gham, Aryan; Thulkar, Anived",
-          "track": "AI for Healthcare and Precision Agriculture",
-          "startTime": "4:00 PM",
-          "endTime": "4:15 PM"
+          "track": "AI for Healthcare",
+          "startTime": "4:15 PM",
+          "endTime": "4:30 PM"
         },
         {
           "paperId": 130,
           "title": "AI-Driven Precision Oncology Decision Support System for early Lung and Breast Cancer Diagnosis Using Multimodal Explainable Deep Learning",
           "authors": "M, Tamilarasan *",
-          "track": "AI for Healthcare and Precision Agriculture",
-          "startTime": "4:15 PM",
-          "endTime": "4:30 PM"
+          "track": "AI for Healthcare",
+          "startTime": "4:30 PM",
+          "endTime": "4:45 PM"
         },
         {
           "paperId": 215,
           "title": "A Deep Learning–Driven Integrated Cascade RPN and Fast R-CNN Model for Early Detection of Wheat Mosaic Virus",
           "authors": "SINGH, SUNAINA*",
-          "track": "AI for Healthcare and Precision Agriculture",
-          "startTime": "4:30 PM",
-          "endTime": "4:45 PM"
+          "track": "AI for Healthcare",
+          "startTime": "4:45 PM",
+          "endTime": "5:00 PM"
         },
         {
           "paperId": 38,
           "title": "Implementation and Comparative Analysis of Plant Disease Detection Algorithms for Banana Leaf",
           "authors": "BHURE, KIRTI*",
-          "track": "AI for Healthcare and Precision Agriculture",
-          "startTime": "4:45 PM",
-          "endTime": "5:00 PM"
+          "track": "AI for Healthcare",
+          "startTime": "5:00 PM",
+          "endTime": "5:15 PM"
         },
         {
           "paperId": 59,
           "title": "Deep Learning-Based Multi-Class Paddy Disease Classification for Precision Agriculture",
           "authors": "Kumar, Rahul*; Kant, Ravi; Telangore, Hardik; Kumar, Raushan; Kumar, Sujeet; Sharma, Manish",
-          "track": "AI for Healthcare and Precision Agriculture",
-          "startTime": "5:00 PM",
-          "endTime": "5:15 PM"
+          "track": "AI for Healthcare",
+          "startTime": "5:15 PM",
+          "endTime": "5:30 PM"
         }
       ]
     },
@@ -470,6 +541,16 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 1 — 8 October 2026",
       "slot": "3:45–5:45 PM",
       "room": "L405",
+      "chairs": [
+        {
+          "name": "Dr. Vishal Pandey",
+          "affiliation": "Adani University"
+        },
+        {
+          "name": "Dr. Vidhi Rawat",
+          "affiliation": "IES University"
+        }
+      ],
       "papers": [
         {
           "paperId": 42,
@@ -526,6 +607,14 @@ window.ICPCCI_DATA = {
           "track": "AI, Security and Intelligent Computing Systems",
           "startTime": "5:15 PM",
           "endTime": "5:30 PM"
+        },
+        {
+          "paperId": 257,
+          "title": "Design and Analysis of Dual Band Annular Ring Microstrip Antenna for Satellite Applications",
+          "authors": "Arya, Dr. Vivek*",
+          "track": "AI, Security and Intelligent Computing Systems",
+          "startTime": "5:30 PM",
+          "endTime": "5:45 PM"
         }
       ]
     },
@@ -537,6 +626,16 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 1 — 8 October 2026",
       "slot": "3:45–5:45 PM",
       "room": "S401",
+      "chairs": [
+        {
+          "name": "Dr. Kartik Pandya",
+          "affiliation": "Parul University"
+        },
+        {
+          "name": "Dr. Manisha Shah",
+          "affiliation": "Nirma University"
+        }
+      ],
       "papers": [
         {
           "paperId": 172,
@@ -596,6 +695,21 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 2 — 9 October 2026",
       "slot": "8:45–10:45 AM",
       "room": "L305",
+      "chairs": [
+        {
+          "name": "Dr. Tejas Modi",
+          "affiliation": "Adani University"
+        },
+        {
+          "name": "Dr. M. Suresh",
+          "affiliation": "VIT Bhopal",
+          "online": true
+        },
+        {
+          "name": "Dr. Ajit Kumar",
+          "affiliation": "IITRAM"
+        }
+      ],
       "papers": [
         {
           "paperId": 104,
@@ -655,11 +769,21 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 2 — 9 October 2026",
       "slot": "8:45–10:45 AM",
       "room": "L405",
+      "chairs": [
+        {
+          "name": "Ms. Supriya Anil Nair",
+          "affiliation": "IPR"
+        },
+        {
+          "name": "Dr. Axay Mehta",
+          "affiliation": ""
+        }
+      ],
       "papers": [
         {
-          "paperId": 23,
-          "title": "Bilevel Stackelberg Optimization of a Microgrid-Integrated Virtual Power Plant with Hydrogen Storage",
-          "authors": "Pandya, Vishal*",
+          "paperId": 225,
+          "title": "A Bidirectional DC-DC Converter With High Voltage Gain and Common Ground Feature",
+          "authors": "PANDA, KAIBALYA*; Patel, Vedant; Singhal, Jinisha; Varshney, Shreekant; Sharma, Preeti; Shukla, Vipin",
           "track": "Microgrid & Smartgrids",
           "startTime": "8:45 AM",
           "endTime": "9:00 AM"
@@ -689,25 +813,25 @@ window.ICPCCI_DATA = {
           "endTime": "9:45 AM"
         },
         {
-          "paperId": 247,
-          "title": "A Dual-Loop PI Control Strategy for a Single-Phase Full-Bridge Inverter with Adaptive 50 Hz/60 Hz Operation Using SPWM",
-          "authors": "P, Elangovan*",
+          "paperId": 219,
+          "title": "A Design Approach for DC-DC Boost Converters in PV Applications Guided by the Load Line",
+          "authors": "YADAV, INDRESH*",
           "track": "Microgrid & Smartgrids",
           "startTime": "9:45 AM",
           "endTime": "10:00 AM"
         },
         {
-          "paperId": 219,
-          "title": "A Design Approach for DC-DC Boost Converters in PV Applications Guided by the Load Line",
-          "authors": "YADAV, INDRESH*",
+          "paperId": 61,
+          "title": "An IoT-Enabled Energy Monitoring Framework for Real-Time Forecasting and Anomaly Detection in Smart Homes",
+          "authors": "Chaudhari, Nishantkumar; Kayasth, Krunal; Rana, Kalprajsinh; Adhikari, Devlina*",
           "track": "Microgrid & Smartgrids",
           "startTime": "10:00 AM",
           "endTime": "10:15 AM"
         },
         {
-          "paperId": 61,
-          "title": "An IoT-Enabled Energy Monitoring Framework for Real-Time Forecasting and Anomaly Detection in Smart Homes",
-          "authors": "Chaudhari, Nishantkumar; Kayasth, Krunal; Rana, Kalprajsinh; Adhikari, Devlina*",
+          "paperId": 221,
+          "title": "A Comparative study on CWT, STFT and Synchrosqueezed Wavelet Transform for A Power Quality Anomaly Classification System based on Pattern Matching and Artificial Neural Network",
+          "authors": "Khatik, Pradeep Kumar*; Dohare, Punjan",
           "track": "Microgrid & Smartgrids",
           "startTime": "10:15 AM",
           "endTime": "10:30 AM"
@@ -730,6 +854,17 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 2 — 9 October 2026",
       "slot": "1:30–3:30 PM",
       "room": "L305",
+      "chairs": [
+        {
+          "name": "Dr. Shiv Manjaree Gopaliya",
+          "affiliation": "VIT Bhopal",
+          "online": true
+        },
+        {
+          "name": "Dr. Rahul Kumar",
+          "affiliation": "IITRAM"
+        }
+      ],
       "papers": [
         {
           "paperId": 69,
@@ -772,12 +907,28 @@ window.ICPCCI_DATA = {
           "endTime": "2:45 PM"
         },
         {
+          "paperId": 97,
+          "title": "Experimental Performance Evaluation of a Heavy-Payload Quadrotor UAV Under Reduced Air Density Through High-Altitude Flight Testing",
+          "authors": "Surani, Harikrushn*",
+          "track": "Control Systems",
+          "startTime": "2:45 PM",
+          "endTime": "3:00 PM"
+        },
+        {
           "paperId": 106,
           "title": "Cross-Temperature Generalisation of a Bidirectional LSTM Network for State of Charge Estimation in Lithium-Ion Batteries",
           "authors": "Nambiar, Shyni*",
           "track": "Control Systems",
-          "startTime": "2:45 PM",
-          "endTime": "3:00 PM"
+          "startTime": "3:00 PM",
+          "endTime": "3:15 PM"
+        },
+        {
+          "paperId": 247,
+          "title": "A Dual-Loop PI Control Strategy for a Single-Phase Full-Bridge Inverter with Adaptive 50 Hz/60 Hz Operation Using SPWM",
+          "authors": "P, Elangovan*",
+          "track": "Control Systems",
+          "startTime": "3:15 PM",
+          "endTime": "3:30 PM"
         }
       ]
     },
@@ -789,6 +940,16 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 2 — 9 October 2026",
       "slot": "1:30–3:30 PM",
       "room": "L405",
+      "chairs": [
+        {
+          "name": "Dr. Chintan Mehta",
+          "affiliation": "Nirma University"
+        },
+        {
+          "name": "Dr. Manjunath K.",
+          "affiliation": "IITRAM"
+        }
+      ],
       "papers": [
         {
           "paperId": 51,

@@ -65,6 +65,19 @@ if (data) {
     if (session.sessionNumber === undefined || session.sessionNumber === null) {
       fail(`sessions[${sessionIndex}].sessionNumber is required.`);
     }
+    if (session.chairs !== undefined && !Array.isArray(session.chairs)) {
+      fail(`sessions[${sessionIndex}].chairs must be an array when provided.`);
+    }
+    (session.chairs || []).forEach((chair, chairIndex) => {
+      if (chair.visible === false) return;
+      requireText(chair, "name", `sessions[${sessionIndex}].chairs[${chairIndex}]`);
+      if (chair.affiliation !== undefined && typeof chair.affiliation !== "string") {
+        fail(`sessions[${sessionIndex}].chairs[${chairIndex}].affiliation must be a string when provided.`);
+      }
+      if (chair.online !== undefined && typeof chair.online !== "boolean") {
+        fail(`sessions[${sessionIndex}].chairs[${chairIndex}].online must be a boolean when provided.`);
+      }
+    });
     if (!Array.isArray(session.papers)) {
       fail(`sessions[${sessionIndex}].papers must be an array.`);
       return;

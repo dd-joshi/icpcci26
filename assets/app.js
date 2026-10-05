@@ -10,14 +10,10 @@
   const site = data.site || {};
   const conference = data.conference || {};
 
-  const trackColors = {
-    "AI/ML": "#2864dc",
-    "Electrical/Power": "#d36619",
-    "Communication": "#0a8a82",
-    "Other": "#7448b8",
-    "Control": "#b13e65",
-    "Communication + Control": "#0a8a82",
-  };
+  const sessionColors = [
+    "#2864dc", "#d36619", "#0a8a82", "#7448b8", "#b13e65",
+    "#1d7697", "#a05b12", "#31744c", "#9b3f69", "#5362a8",
+  ];
 
   function escapeHtml(value) {
     return String(value ?? "").replace(/[&<>'"]/g, (character) => ({
@@ -52,6 +48,19 @@
     papers: orderedVisible(session.papers),
   }));
   const agenda = orderedVisible(data.agenda);
+
+  function colorForSession(session) {
+    const index = Math.max(0, Number(session.sessionNumber || 1) - 1);
+    return sessionColors[index % sessionColors.length];
+  }
+
+  function renderChairList(session) {
+    return orderedVisible(session.chairs).map((chair) => {
+      const affiliation = chair.affiliation ? `, ${escapeHtml(chair.affiliation)}` : "";
+      const online = chair.online ? " (Online)" : "";
+      return `<span><strong>${escapeHtml(chair.name)}</strong>${affiliation}${online}</span>`;
+    }).join(" · ");
+  }
 
   function renderSiteContent() {
     document.title = site.pageTitle || `${conference.shortTitle || "Conference"} Technical Program`;
@@ -163,6 +172,9 @@
   const sessionList = document.querySelector("#sessionList");
   const emptyState = document.querySelector("#emptyState");
   const resultsLabel = document.querySelector("#resultsLabel");
+  const printButton = document.querySelector("#printSession");
+  const papersView = document.querySelector("#papersView");
+  const agendaView = document.querySelector("#agendaView");
 
   const unique = (items) => [...new Set(items)].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
   const addOptions = (select, items) => items.forEach((item) => {
@@ -172,12 +184,19 @@
     select.append(option);
   });
 
+  const themes = unique(sessions.map((session) => session.track));
   addOptions(dayFilter, unique(sessions.map((session) => session.dateLabel)));
-  addOptions(trackFilter, unique(sessions.flatMap((session) => session.papers.map((paper) => paper.track))));
+  addOptions(trackFilter, themes);
   addOptions(roomFilter, unique(sessions.map((session) => session.room)));
 
-  document.querySelector("#trackLegend").innerHTML = unique(sessions.flatMap((session) => session.papers.map((paper) => paper.track)))
-    .map((track) => `<span><i style="background:${trackColors[track] || "#65748a"}"></i>${escapeHtml(track)}</span>`).join("");
+  document.querySelector("#trackLegend").innerHTML = sessions
+    .map((session) => `<span><i style="background:${colorForSession(session)}"></i>S${escapeHtml(session.sessionNumber)} · ${escapeHtml(session.track)}</span>`).join("");
+
+  const requestedTheme = new URLSearchParams(window.location.search).get("theme");
+  if (requestedTheme && themes.includes(requestedTheme)) {
+    state.track = requestedTheme;
+    trackFilter.value = requestedTheme;
+  }
 
   function matches(session, paper) {
     if (state.day && session.dateLabel !== state.day) return false;
@@ -221,12 +240,31 @@
 
     resultsLabel.textContent = `${paperCount} paper${paperCount === 1 ? "" : "s"} across ${groups.length} session${groups.length === 1 ? "" : "s"}`;
     emptyState.hidden = groups.length !== 0;
+    const selectedSession = sessions.find((session) => session.track === state.track);
+    printButton.disabled = !selectedSession;
+    printButton.textContent = selectedSession ? `Print Session ${selectedSession.sessionNumber}` : "Print selected theme";
   }
 
   function renderSession(session) {
-    const color = trackColors[session.track] || "#217f7a";
+    const color = colorForSession(session);
+    const chairs = renderChairList(session);
     return `
       <article class="session-card" style="--session-color:${color}">
+        <div class="print-only print-session-banner">
+          <div class="print-brand">
+            <img src="${escapeHtml(site.logo || "assets/iitram-logo.png")}" alt="${escapeHtml(site.logoAlt || conference.shortTitle || "Conference")}">
+            <div>
+              <p>${escapeHtml(conference.shortTitle)} · Technical Program</p>
+              <h1>Session ${escapeHtml(session.sessionNumber)} · ${escapeHtml(session.title)}</h1>
+            </div>
+          </div>
+          <div class="print-session-meta">
+            <span><strong>Date</strong>${escapeHtml(session.dateLabel)}</span>
+            <span><strong>Time</strong>${escapeHtml(session.slot)}</span>
+            <span><strong>Venue</strong>${escapeHtml(session.room)}</span>
+          </div>
+          ${chairs ? `<p class="print-chairs"><strong>Session chair${orderedVisible(session.chairs).length === 1 ? "" : "s"}:</strong> ${chairs}</p>` : ""}
+        </div>
         <header class="session-head">
           <div>
             <p class="session-kicker">Session ${escapeHtml(session.sessionNumber)} · ${escapeHtml(session.track)}</p>
@@ -239,10 +277,11 @@
           </div>
         </header>
         <table class="paper-table">
-          <thead><tr><th>Time</th><th>Paper</th><th>Title and authors</th></tr></thead>
+          <thead><tr><th class="paper-sequence">No.</th><th>Time</th><th>Paper</th><th>Title and complete author list</th></tr></thead>
           <tbody>
-            ${session.papers.map((paper) => `
+            ${session.papers.map((paper, index) => `
               <tr>
+                <td class="paper-sequence">${escapeHtml(paper.order || index + 1)}</td>
                 <td class="paper-time">${escapeHtml(paper.startTime)}</td>
                 <td class="paper-id">#${escapeHtml(paper.paperId)}</td>
                 <td class="paper-title">${escapeHtml(paper.title)}<span class="paper-authors">${escapeHtml(paper.authors)}</span></td>
@@ -283,6 +322,39 @@
     render();
     searchInput.focus();
   });
+
+  let printSnapshot = null;
+  function prepareSessionPrint() {
+    if (!state.track || printSnapshot) return;
+    printSnapshot = {
+      state: { ...state },
+      papersHidden: papersView.hidden,
+      agendaHidden: agendaView.hidden,
+    };
+    Object.assign(state, { query: "", day: "", room: "" });
+    papersView.hidden = false;
+    agendaView.hidden = true;
+    document.body.classList.add("printing-session");
+    render();
+  }
+
+  function restoreAfterPrint() {
+    if (!printSnapshot) return;
+    Object.assign(state, printSnapshot.state);
+    papersView.hidden = printSnapshot.papersHidden;
+    agendaView.hidden = printSnapshot.agendaHidden;
+    document.body.classList.remove("printing-session");
+    printSnapshot = null;
+    render();
+  }
+
+  printButton.addEventListener("click", () => {
+    if (!state.track) return;
+    prepareSessionPrint();
+    window.print();
+  });
+  window.addEventListener("beforeprint", prepareSessionPrint);
+  window.addEventListener("afterprint", restoreAfterPrint);
 
   document.querySelectorAll(".view-tab").forEach((button) => button.addEventListener("click", () => {
     const view = button.dataset.view;
