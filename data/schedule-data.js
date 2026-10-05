@@ -104,6 +104,12 @@ window.ICPCCI_DATA = {
       "logo": "assets/gujcost.jpeg",
       "visible": true,
       "order": 4
+    },
+    {
+      "name": "IDSR",
+      "logo": "assets/idsr.png",
+      "visible": true,
+      "order": 5
     }
   ],
   "agenda": [

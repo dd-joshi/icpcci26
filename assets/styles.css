@@ -135,11 +135,11 @@ main.shell { padding-block: 34px 56px; }
 .presenter-points p { margin: 0; color: #def5f2; }
 .presenter-points strong { display: block; margin-bottom: 3px; color: white; }
 
-.partners { padding: 38px 0 46px; background: white; }
-.logo-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 15px; }
-.logo-row div, .logo-row a { min-height: 105px; display: grid; place-items: center; padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: #fbfcfe; }
+.partners { padding: 28px 0 30px; border-bottom: 1px solid var(--line); background: white; }
+.logo-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-top: 15px; }
+.logo-row div, .logo-row a { min-height: 116px; display: grid; place-items: center; padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: #fbfcfe; }
 .logo-row a:hover { border-color: var(--teal); }
-.logo-row img { max-width: 100%; max-height: 76px; object-fit: contain; }
+.logo-row img { display: block; max-width: 100%; max-height: 86px; object-fit: contain; }
 
 footer { padding: 34px 0; background: var(--navy); color: #c4d0e0; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 30px; }
@@ -156,6 +156,7 @@ footer { padding: 34px 0; background: var(--navy); color: #c4d0e0; }
   .clear-button { align-self: end; }
   .presenter-points { grid-template-columns: 1fr; }
   .guest-grid { grid-template-columns: 1fr; }
+  .logo-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (max-width: 680px) {
