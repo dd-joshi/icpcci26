@@ -19,6 +19,7 @@ The theme-based session names, rooms, paper allocation, and paper sequence curre
 
 - Keep paper 237 titled **“Design and Performance Analysis of a Minimized-Switch Multilevel Inverter with Advanced PWM Control for Grid-Connected Renewable Energy Applications”** unless the site owner supplies a newer correction.
 - The site owner moved paper 224 to Session 8 on 9 October, at 10:30–10:45 AM, and confirmed its author as **P, Elangovan\***. This explicit correction overrides its earlier PDF placement in Session 3.
+- The site owner replaced every L205 session venue with **S401** and set **S401** as the venue for the Opening Ceremony and IEEE Student Branch Inauguration.
 - Do not regroup papers by their older discipline labels. The current public program uses the theme-based session titles stored on each session and paper.
 
 ## Common updates

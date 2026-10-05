@@ -9,8 +9,9 @@
  * Sessions, rooms, paper allocation, and paper order follow the organizer's
  * “4ICPCCI 2026 - Technical Program - Print.pdf”, with explicit owner updates:
  * paper 224 is in Session 8 on 9 October and its author is P, Elangovan*;
- * paper 237 intentionally uses “Minimized-Switch”. Do not override these
- * corrections without a newer organizer instruction.
+ * paper 237 intentionally uses “Minimized-Switch”; S401 replaces L205 and is
+ * the venue for inauguration events. Do not override these corrections without
+ * a newer organizer instruction.
  * See ../README.md for examples and the validation checklist.
  */
 window.ICPCCI_DATA = {
@@ -42,7 +43,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "5 October 2026, 7:34 PM IST"
+    "lastUpdated": "5 October 2026, 7:38 PM IST"
   },
   "announcements": [],
   "guests": [],
@@ -107,7 +108,7 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 1 — 8 October 2026",
       "time": "9:30–10:30 AM",
       "program": "Opening Ceremony",
-      "location": "S101"
+      "location": "S401"
     },
     {
       "dateLabel": "Day 1 — 8 October 2026",
@@ -137,7 +138,7 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 1 — 8 October 2026",
       "time": "1:30–3:30 PM",
       "program": "Theme-Based Sessions 1, 2, 3",
-      "location": "L305, L405, L205",
+      "location": "L305, L405, S401",
       "technical": true
     },
     {
@@ -150,7 +151,7 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 1 — 8 October 2026",
       "time": "3:45–5:45 PM",
       "program": "Theme-Based Sessions 4, 5, 6",
-      "location": "L305, L405, L205",
+      "location": "L305, L405, S401",
       "technical": true
     },
     {
@@ -201,7 +202,7 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 2 — 9 October 2026",
       "time": "3:30–4:00 PM",
       "program": "IEEE Student Branch Inauguration + IEEE Leaders' Talk",
-      "location": ""
+      "location": "S401"
     },
     {
       "dateLabel": "Day 2 — 9 October 2026",
@@ -350,7 +351,7 @@ window.ICPCCI_DATA = {
       "date": "2026-10-08",
       "dateLabel": "Day 1 — 8 October 2026",
       "slot": "1:30–3:30 PM",
-      "room": "L205",
+      "room": "S401",
       "papers": [
         {
           "paperId": 32,
@@ -535,7 +536,7 @@ window.ICPCCI_DATA = {
       "date": "2026-10-08",
       "dateLabel": "Day 1 — 8 October 2026",
       "slot": "3:45–5:45 PM",
-      "room": "L205",
+      "room": "S401",
       "papers": [
         {
           "paperId": 172,
