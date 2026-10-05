@@ -1,6 +1,6 @@
 # ICPCCI 2026 static website
 
-This is a dependency-free static conference website. It can be opened directly from `index.html` and can be hosted on GitHub Pages, Vercel, Netlify, or any ordinary web server.
+This is a dependency-free static conference website. It can be opened directly from `index.html` and is configured to publish through GitHub Pages.
 
 ## Maintenance rule
 
@@ -129,17 +129,15 @@ Then open `http://localhost:5500/` and check both program tabs, filters, mobile 
 
 ## Publishing workflow
 
-The folder is ready for Git-based deployment, but a remote repository and hosting account must be selected by the site owner.
+The repository is `https://github.com/dd-joshi/icpcci26` and the GitHub Pages workflow is in `.github/workflows/pages.yml`.
 
-Recommended workflow:
+1. Make and validate the content update locally.
+2. Commit the update to Git.
+3. Push it to the `main` branch.
+4. GitHub Actions runs `npm test` and publishes the site automatically.
+5. Check the Actions tab if an update does not appear online.
 
-1. Create a GitHub repository and push this folder to its `main` branch.
-2. Import that repository into Vercel as a static site. No build command is required.
-3. Connect the production domain in Vercel.
-4. Make future content edits on a branch and push it to receive a preview deployment.
-5. Merge the approved change into `main`; Vercel publishes it automatically.
-
-GitHub Pages can also publish directly from the repository root on the `main` branch.
+The expected public address is `https://dd-joshi.github.io/icpcci26/`. A repository administrator must enable GitHub Pages with **GitHub Actions** as its source once; subsequent pushes deploy automatically.
 
 ## Instructions for future AI maintainers
 
