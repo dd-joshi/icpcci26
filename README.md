@@ -13,6 +13,14 @@ This is a dependency-free static conference website. It can be opened directly f
 
 The page remains fully static. There is no database, build step, or runtime backend.
 
+## Current technical-program authority
+
+The theme-based session names, rooms, paper allocation, and paper sequence currently follow the organizer-supplied PDF `4ICPCCI 2026 - Technical Program - Print.pdf`, dated 5 October 2026. The website assigns 15-minute presentation times in the listed paper order.
+
+- Keep paper 237 titled **“Design and Performance Analysis of a Minimized-Switch Multilevel Inverter with Advanced PWM Control for Grid-Connected Renewable Energy Applications”** unless the site owner supplies a newer correction.
+- Paper 224 is included in Session 3. Its authors were not present in the supplied technical-program PDF, so the website states that clearly instead of inventing names.
+- Do not regroup papers by their older discipline labels. The current public program uses the theme-based session titles stored on each session and paper.
+
 ## Common updates
 
 ### Change the venue, dates, contact, or official link
