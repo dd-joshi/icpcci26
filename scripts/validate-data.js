@@ -28,6 +28,28 @@ function checkLocalFile(relativePath, location) {
   }
 }
 
+function clockToMinutes(value, fallbackSuffix = "") {
+  const match = String(value || "").trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)?$/i);
+  if (!match) return null;
+  const suffix = (match[3] || fallbackSuffix).toUpperCase();
+  if (!suffix) return null;
+  let hour = Number(match[1]);
+  const minute = Number(match[2]);
+  if (hour < 1 || hour > 12 || minute < 0 || minute > 59) return null;
+  if (hour === 12) hour = 0;
+  if (suffix === "PM") hour += 12;
+  return hour * 60 + minute;
+}
+
+function parseSessionSlot(value) {
+  const match = String(value || "").trim().match(/^(\d{1,2}:\d{2})\s*(AM|PM)?\s*[–-]\s*(\d{1,2}:\d{2})\s*(AM|PM)$/i);
+  if (!match) return null;
+  const endSuffix = match[4].toUpperCase();
+  const start = clockToMinutes(match[1], match[2] || endSuffix);
+  const end = clockToMinutes(match[3], endSuffix);
+  return start === null || end === null ? null : { start, end };
+}
+
 let data;
 try {
   const source = fs.readFileSync(dataFile, "utf8");
@@ -74,14 +96,14 @@ if (data) {
       if (chair.affiliation !== undefined && typeof chair.affiliation !== "string") {
         fail(`sessions[${sessionIndex}].chairs[${chairIndex}].affiliation must be a string when provided.`);
       }
-      if (chair.online !== undefined && typeof chair.online !== "boolean") {
-        fail(`sessions[${sessionIndex}].chairs[${chairIndex}].online must be a boolean when provided.`);
-      }
     });
     if (!Array.isArray(session.papers)) {
       fail(`sessions[${sessionIndex}].papers must be an array.`);
       return;
     }
+    const sessionSlot = parseSessionSlot(session.slot);
+    if (!sessionSlot) fail(`sessions[${sessionIndex}].slot must use a time range such as 1:30–3:30 PM.`);
+    let previousPaperEnd = null;
     session.papers.forEach((paper, paperIndex) => {
       if (paper.visible === false) return;
       const location = `sessions[${sessionIndex}].papers[${paperIndex}]`;
@@ -93,7 +115,28 @@ if (data) {
       } else {
         paperIds.add(String(paper.paperId));
       }
+      const start = clockToMinutes(paper.startTime);
+      const end = clockToMinutes(paper.endTime);
+      if (start === null || end === null || end <= start) {
+        fail(`${location} has an invalid startTime/endTime range.`);
+      } else {
+        if (Number.isFinite(Number(data.site.minutesPerPaper)) && end - start !== Number(data.site.minutesPerPaper)) {
+          fail(`${location} must use the configured ${data.site.minutesPerPaper}-minute presentation duration.`);
+        }
+        if (previousPaperEnd !== null && start !== previousPaperEnd) {
+          fail(`${location}.startTime must immediately follow the previous visible paper.`);
+        }
+        previousPaperEnd = end;
+      }
     });
+    const firstVisiblePaper = session.papers.find((paper) => paper.visible !== false);
+    const firstPaperStart = firstVisiblePaper ? clockToMinutes(firstVisiblePaper.startTime) : null;
+    if (sessionSlot && firstPaperStart !== null && firstPaperStart < sessionSlot.start) {
+      fail(`sessions[${sessionIndex}] starts before its declared slot.`);
+    }
+    if (sessionSlot && previousPaperEnd !== null && previousPaperEnd > sessionSlot.end) {
+      fail(`sessions[${sessionIndex}] papers end after the declared slot.`);
+    }
   });
 
   (data.guests || []).forEach((guest, index) => {

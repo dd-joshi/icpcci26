@@ -57,8 +57,7 @@
   function renderChairList(session) {
     return orderedVisible(session.chairs).map((chair) => {
       const affiliation = chair.affiliation ? `, ${escapeHtml(chair.affiliation)}` : "";
-      const online = chair.online ? " (Online)" : "";
-      return `<span><strong>${escapeHtml(chair.name)}</strong>${affiliation}${online}</span>`;
+      return `<span><strong>${escapeHtml(chair.name)}</strong>${affiliation}</span>`;
     }).join(" · ");
   }
 
