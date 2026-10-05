@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" id="metaDescription" content="ICPCCI 2026 technical program">
+  <title>ICPCCI 2026 Technical Program</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307162d'/%3E%3Cpath d='M12 18h40v7H12zm0 14h28v7H12zm0 14h19v7H12z' fill='%23ffb81c'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <!-- AI maintainers: edit conference content in data/schedule-data.js. See README.md. -->
+  <a class="skip-link" href="#program">Skip to program</a>
+
+  <header class="site-header">
+    <div class="brand-row shell">
+      <a class="conference-mark" id="conferenceMark" href="#" target="_blank" rel="noreferrer">
+        <img id="conferenceLogo" src="assets/iitram-logo.png" alt="IITRAM">
+        <span><strong id="brandName">ICPCCI</strong><small id="brandYear">2026</small></span>
+      </a>
+      <div class="event-meta">
+        <span id="conferenceDates"></span>
+        <span id="conferenceVenueShort"></span>
+        <span id="conferenceRecord"></span>
+      </div>
+      <a class="official-link" id="officialLink" href="#" target="_blank" rel="noreferrer">Official conference site <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <div class="announcement-bar" id="announcementBar" hidden></div>
+
+  <section class="intro">
+    <div class="intro-photo" aria-hidden="true"></div>
+    <div class="intro-shade" aria-hidden="true"></div>
+    <div class="shell intro-content">
+      <p class="eyebrow" id="heroEyebrow"></p>
+      <h1 id="heroTitle"></h1>
+      <p id="heroSubtitle"></p>
+      <div class="metric-row" aria-label="Program summary">
+        <span><strong id="paperMetric">65</strong> papers</span>
+        <span><strong id="sessionMetric">10</strong> sessions</span>
+        <span><strong id="minutesMetric"></strong> minutes per paper</span>
+        <span><strong id="daysMetric"></strong> conference days</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="shell" id="program">
+    <div class="program-toolbar">
+      <div class="view-tabs" role="tablist" aria-label="Program views">
+        <button class="view-tab is-active" role="tab" aria-selected="true" data-view="papers">Technical program</button>
+        <button class="view-tab" role="tab" aria-selected="false" data-view="agenda">Conference schedule</button>
+      </div>
+      <div class="toolbar-actions">
+        <span class="updated" id="updatedLabel"></span>
+      </div>
+    </div>
+
+    <section id="papersView" class="program-view">
+      <div class="filter-panel" aria-label="Program filters">
+        <label class="search-field">
+          <span>Search program</span>
+          <input id="searchInput" type="search" placeholder="Paper ID, title, author, session or room" autocomplete="off">
+        </label>
+        <label>
+          <span>Day</span>
+          <select id="dayFilter"><option value="">Both days</option></select>
+        </label>
+        <label>
+          <span>Track</span>
+          <select id="trackFilter"><option value="">All tracks</option></select>
+        </label>
+        <label>
+          <span>Room</span>
+          <select id="roomFilter"><option value="">All rooms</option></select>
+        </label>
+        <button class="clear-button" id="clearFilters" type="button">Clear filters</button>
+      </div>
+
+      <div class="results-summary" aria-live="polite">
+        <p id="resultsLabel">Loading the technical program…</p>
+        <div class="legend" aria-label="Track colors" id="trackLegend"></div>
+      </div>
+
+      <div id="sessionList" class="session-list"></div>
+      <div id="emptyState" class="empty-state" hidden>
+        <strong>No matching papers</strong>
+        <p>Try a paper ID, a shorter title word, or clear one of the filters.</p>
+      </div>
+    </section>
+
+    <section id="agendaView" class="program-view" hidden>
+      <div class="agenda-intro">
+        <div>
+          <p class="eyebrow" id="agendaEyebrow"></p>
+          <h2 id="agendaTitle"></h2>
+        </div>
+        <p id="agendaDescription"></p>
+      </div>
+      <div id="agendaDays" class="agenda-days"></div>
+    </section>
+  </main>
+
+  <section class="guests" id="guestsSection" hidden>
+    <div class="shell">
+      <p class="eyebrow" id="guestsEyebrow"></p>
+      <h2 id="guestsTitle"></h2>
+      <div class="guest-grid" id="guestGrid"></div>
+    </div>
+  </section>
+
+  <section class="presenter-note">
+    <div class="shell presenter-grid">
+      <div>
+        <p class="eyebrow" id="presenterEyebrow"></p>
+        <h2 id="presenterTitle"></h2>
+      </div>
+      <div class="presenter-points" id="presenterPoints"></div>
+    </div>
+  </section>
+
+  <section class="partners" aria-label="Sponsors and partners">
+    <div class="shell">
+      <p class="eyebrow" id="partnersEyebrow"></p>
+      <div class="logo-row" id="partnerLogos"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div>
+        <strong id="footerShortTitle"></strong>
+        <p id="footerTitle"></p>
+      </div>
+      <div>
+        <strong>Venue</strong>
+        <p id="footerVenue"></p>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <p><a id="footerContact" href="#"></a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/schedule-data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

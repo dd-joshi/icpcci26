@@ -1,0 +1,10 @@
+{
+  "name": "icpcci-2026-static-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependency-free static technical program for ICPCCI 2026",
+  "scripts": {
+    "test": "node scripts/validate-data.js",
+    "validate": "node scripts/validate-data.js"
+  }
+}
