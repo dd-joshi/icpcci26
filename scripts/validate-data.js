@@ -64,6 +64,7 @@ try {
 if (data) {
   requireText(data.site, "pageTitle", "site");
   requireText(data.site, "description", "site");
+  requireText(data.site, "latestUpdateLabel", "site");
   checkLocalFile(data.site && data.site.logo, "site.logo");
 
   ["title", "shortTitle", "dates", "venue", "contact", "officialSite", "lastUpdated"].forEach((key) => {
@@ -71,11 +72,16 @@ if (data) {
   });
 
   if (!Array.isArray(data.agenda)) fail("agenda must be an array.");
+  if (!Array.isArray(data.latestUpdates)) fail("latestUpdates must be an array.");
   if (!Array.isArray(data.sessions)) fail("sessions must be an array.");
   if (!Array.isArray(data.guests)) fail("guests must be an array.");
   if (!Array.isArray(data.partners)) fail("partners must be an array.");
 
   const paperIds = new Set();
+  (data.latestUpdates || []).forEach((item, index) => {
+    if (item.visible === false) return;
+    requireText(item, "text", `latestUpdates[${index}]`);
+  });
   (data.agenda || []).forEach((item, index) => {
     if (item.visible === false) return;
     ["dateLabel", "time", "program"].forEach((key) => requireText(item, key, `agenda[${index}]`));

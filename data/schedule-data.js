@@ -33,7 +33,8 @@ window.ICPCCI_DATA = {
     "agendaDescription": "Theme-based technical-session timings below link directly to the detailed sessions. All other events follow the conference schedule supplied by the organizers.",
     "guestsEyebrow": "Guests & speakers",
     "guestsTitle": "Meet our distinguished guests",
-    "partnersEyebrow": "Sponsors & partners"
+    "partnersEyebrow": "Sponsors & partners",
+    "latestUpdateLabel": "Latest Update"
   },
   "conference": {
     "title": "2nd IEEE International Conference on Power, Control & Communication Infrastructure",
@@ -47,6 +48,13 @@ window.ICPCCI_DATA = {
     "lastUpdated": "6 October 2026, 12:37 AM IST"
   },
   "announcements": [],
+  "latestUpdates": [
+    {
+      "text": "Sessions last updated on 6 October 2026, 12:37 AM IST.",
+      "visible": true,
+      "order": 1
+    }
+  ],
   "guests": [],
   "presenter": {
     "eyebrow": "For presenters",
@@ -96,6 +104,12 @@ window.ICPCCI_DATA = {
       "logo": "assets/idsr.png",
       "visible": true,
       "order": 5
+    },
+    {
+      "name": "SSIP",
+      "logo": "assets/ssip.jpeg",
+      "visible": true,
+      "order": 6
     }
   ],
   "agenda": [

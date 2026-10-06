@@ -46,6 +46,20 @@ a { color: inherit; }
 .announcement-bar p + p { margin-top: 4px; }
 .announcement-bar a { margin-left: 4px; text-underline-offset: 2px; }
 
+.latest-updates { padding: 9px 0 10px; border-bottom: 1px solid #e4e9ef; background: white; }
+.latest-updates[hidden] { display: none; }
+.latest-update-label { margin: 0; color: #a24f12; font-size: .72rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.latest-update-window { min-height: 24px; overflow: hidden; position: relative; }
+.latest-update-track { width: max-content; display: flex; align-items: center; padding-left: 100%; white-space: nowrap; animation: latest-update-scroll 18s linear infinite; animation-delay: -4s; }
+.latest-update-track:hover { animation-play-state: paused; }
+.latest-update-item { display: inline-flex; align-items: center; gap: 8px; margin-right: 64px; color: #35455d; font-size: .9rem; font-weight: 650; }
+.latest-update-item::before { content: ""; width: 6px; height: 6px; flex: 0 0 6px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 3px var(--gold-soft); }
+.latest-update-item a { color: var(--teal); text-underline-offset: 2px; }
+
+@keyframes latest-update-scroll {
+  to { transform: translateX(-100%); }
+}
+
 .intro { min-height: 290px; position: relative; display: grid; align-items: end; overflow: hidden; background: var(--navy); color: white; }
 .intro-photo { position: absolute; inset: 0; background: url("iitram-campus.jpg") center 58% / cover no-repeat; opacity: .42; transform: scale(1.02); }
 .intro-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,22,45,.98) 0%, rgba(7,22,45,.88) 46%, rgba(7,22,45,.42) 100%), linear-gradient(0deg, rgba(7,22,45,.55), transparent 55%); }
@@ -90,6 +104,8 @@ main.shell { padding-block: 34px 56px; }
 .session-head { display: grid; grid-template-columns: minmax(180px, 1fr) auto; gap: 18px; align-items: center; padding: 18px 20px; background: linear-gradient(90deg, color-mix(in srgb, var(--session-color) 9%, white), white 70%); border-bottom: 1px solid var(--line); }
 .session-kicker { margin: 0 0 3px; color: var(--session-color); font-weight: 850; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
 .session-head h3 { margin: 0; font-size: 1.18rem; line-height: 1.3; }
+.session-chair-summary { display: flex; flex-wrap: wrap; gap: 3px 8px; margin: 7px 0 0; color: #5d6b7d; font-size: .82rem; line-height: 1.35; }
+.session-chair-summary span { color: var(--navy); font-weight: 800; }
 .session-place { display: grid; grid-template-columns: repeat(3, auto); gap: 8px 16px; text-align: right; color: #42526a; font-size: .9rem; }
 .session-place strong { color: var(--navy); }
 .paper-table { width: 100%; border-collapse: collapse; }
@@ -140,10 +156,12 @@ main.shell { padding-block: 34px 56px; }
 .presenter-points strong { display: block; margin-bottom: 3px; color: white; }
 
 .partners { padding: 28px 0 30px; border-bottom: 1px solid var(--line); background: white; }
-.logo-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-top: 15px; }
+.logo-row { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; margin-top: 15px; }
 .logo-row div, .logo-row a { min-height: 116px; display: grid; place-items: center; padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: #fbfcfe; }
 .logo-row a:hover { border-color: var(--teal); }
 .logo-row img { display: block; max-width: 100%; max-height: 86px; object-fit: contain; }
+.logo-row img[src$="idsr.png"] { max-width: 76px; }
+.logo-row img[src$="ssip.jpeg"] { max-width: 160px; max-height: 72px; }
 
 footer { padding: 34px 0; background: var(--navy); color: #c4d0e0; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 30px; }
@@ -199,6 +217,7 @@ footer { padding: 34px 0; background: var(--navy); color: #c4d0e0; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .latest-update-track { width: auto; padding-left: 0; white-space: normal; animation: none; }
 }
 
 @page {
@@ -210,7 +229,7 @@ footer { padding: 34px 0; background: var(--navy); color: #c4d0e0; }
   :root { background: white; }
   * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
   html, body { width: auto; min-width: 0; background: white; color: #07162d; font: 9pt/1.25 Arial, sans-serif; }
-  .site-header, .announcement-bar, .intro, .partners, .program-toolbar, .filter-panel,
+  .site-header, .announcement-bar, .latest-updates, .intro, .partners, .program-toolbar, .filter-panel,
   .results-summary, .day-heading, .session-head, #agendaView, .guests, .presenter-note,
   footer, .skip-link, .empty-state { display: none !important; }
   main.shell { width: 100%; margin: 0; padding: 0; }

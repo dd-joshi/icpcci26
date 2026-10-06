@@ -6,7 +6,7 @@ This is a dependency-free static conference website. It can be opened directly f
 
 **Edit conference content in `data/schedule-data.js`.** Do not duplicate conference details in `index.html` or `assets/app.js`.
 
-- `data/schedule-data.js` is the single source of truth for conference details, announcements, guests, presenter notes, partners, agenda items, sessions, and papers.
+- `data/schedule-data.js` is the single source of truth for conference details, announcements, latest updates, guests, presenter notes, partners, agenda items, sessions, and papers.
 - `index.html` contains structural containers and accessibility markup.
 - `assets/app.js` renders the data and provides search, filters, and tabs.
 - `assets/styles.css` controls presentation and responsive layout.
@@ -61,6 +61,20 @@ Add an object to `announcements`. Leave `link` and `linkText` out when no link i
 
 The announcement bar stays hidden when the array is empty.
 
+### Change the scrolling latest update
+
+Edit the `latestUpdates` array. The section stays hidden when there are no visible items.
+
+```js
+{
+  "text": "Sessions last updated on 6 October 2026, 12:37 AM IST.",
+  "visible": true,
+  "order": 1
+}
+```
+
+Use one short sentence per item. The small bullet and scrolling behavior are supplied automatically by the page.
+
 ### Add a guest or speaker
 
 Place the photograph in `assets/guests/`, then add an object to `guests`:
@@ -95,6 +109,8 @@ Add an image under `assets/` and add an object to `partners`:
 }
 ```
 
+Logo cards share one row on wide screens and reflow automatically on smaller screens. Keep whitespace inside source images when it is part of the supplied logo; use a targeted CSS width only when one mark appears visually oversized.
+
 ### Change agenda, session, or paper sequence
 
 Collections display in array order by default. For explicit ordering, add numeric `order` values to every item in that collection. Smaller numbers appear first.
@@ -102,6 +118,8 @@ Collections display in array order by default. For explicit ordering, add numeri
 This works for announcements, guests, presenter points, partners, agenda items, sessions, and papers. Set `visible: false` on any item to hide it without deleting it.
 
 When moving a session, update its `date`, `dateLabel`, `slot`, and `room` together. When moving a paper, update `startTime` and `endTime`. If the general timetable changes, also update the matching item in `agenda`.
+
+Session chair names appear in a compact line under the session title. Their affiliations remain in the A4 print header. Update both from each session's `chairs` array; do not hardcode chair names in HTML.
 
 ### Add a paper
 

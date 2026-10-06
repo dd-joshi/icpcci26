@@ -61,6 +61,10 @@
     }).join(" · ");
   }
 
+  function renderChairNames(session) {
+    return orderedVisible(session.chairs).map((chair) => escapeHtml(chair.name)).join(" · ");
+  }
+
   function renderSiteContent() {
     document.title = site.pageTitle || `${conference.shortTitle || "Conference"} Technical Program`;
     const description = document.querySelector("#metaDescription");
@@ -98,6 +102,7 @@
     setText("#guestsEyebrow", site.guestsEyebrow);
     setText("#guestsTitle", site.guestsTitle);
     setText("#partnersEyebrow", site.partnersEyebrow);
+    setText("#latestUpdateLabel", site.latestUpdateLabel || "Latest Update");
 
     const presenter = data.presenter || {};
     setText("#presenterEyebrow", presenter.eyebrow);
@@ -114,6 +119,7 @@
     footerContact.href = conference.contact ? `mailto:${conference.contact}` : "#";
 
     renderAnnouncements();
+    renderLatestUpdates();
     renderGuests();
     renderPartners();
   }
@@ -125,6 +131,18 @@
     container.innerHTML = announcements.map((item) => `
       <p>${escapeHtml(item.text)}${item.link && item.linkText ? ` <a href="${escapeHtml(safeHref(item.link))}">${escapeHtml(item.linkText)}</a>` : ""}</p>
     `).join("");
+  }
+
+  function renderLatestUpdates() {
+    const updates = orderedVisible(data.latestUpdates);
+    const section = document.querySelector("#latestUpdates");
+    section.hidden = updates.length === 0;
+    document.querySelector("#latestUpdateTrack").innerHTML = updates.map((item) => {
+      const content = item.link && item.linkText
+        ? `${escapeHtml(item.text)} <a href="${escapeHtml(safeHref(item.link))}">${escapeHtml(item.linkText)}</a>`
+        : escapeHtml(item.text);
+      return `<span class="latest-update-item">${content}</span>`;
+    }).join("");
   }
 
   function renderGuests() {
@@ -247,6 +265,8 @@
   function renderSession(session) {
     const color = colorForSession(session);
     const chairs = renderChairList(session);
+    const chairNames = renderChairNames(session);
+    const chairLabel = orderedVisible(session.chairs).length === 1 ? "Session chair:" : "Session chairs:";
     return `
       <article class="session-card" style="--session-color:${color}">
         <div class="print-only print-session-banner">
@@ -265,9 +285,10 @@
           ${chairs ? `<p class="print-chairs"><strong>Session chair${orderedVisible(session.chairs).length === 1 ? "" : "s"}:</strong> ${chairs}</p>` : ""}
         </div>
         <header class="session-head">
-          <div>
+          <div class="session-title-block">
             <p class="session-kicker">Session ${escapeHtml(session.sessionNumber)} · ${escapeHtml(session.track)}</p>
             <h3>${escapeHtml(session.title)}</h3>
+            ${chairNames ? `<p class="session-chair-summary"><span>${chairLabel}</span>${chairNames}</p>` : ""}
           </div>
           <div class="session-place">
             <span><strong>${escapeHtml(session.room)}</strong><br>Room</span>
