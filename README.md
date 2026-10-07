@@ -70,7 +70,7 @@ Edit the `latestUpdates` array. The section stays hidden when there are no visib
 
 ```js
 {
-  "text": "Sessions last updated on 7 October 2026, 9:00 AM IST.",
+  "text": "Please check this space for the latest conference news and updates.",
   "visible": true,
   "order": 1
 }
