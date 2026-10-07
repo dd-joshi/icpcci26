@@ -14,13 +14,14 @@
  * 224 stays in S8 with its approved title; paper 237 uses “Minimized-Switch”;
  * and S401 replaces L205. Session 5 is extended to 6:15 PM so all ten papers
  * retain 15-minute presentation slots. On 7 October, paper 73 was added to S3,
- * S6 was renamed “Energy Technology”, Dr. Ajit Kumar moved from S7 to S9, and
- * Dr. Ravi Bhandari was added to S7. Paper 57 was added to the final available
- * S7 presentation slot, and paper 35 moved from S9 to the final S3 slot on
- * 7 October. On 8 October, the organizer supplied the plenary speakers,
- * available topics, and venues; Plenary Talk 3 remains marked “To be
- * announced” until its venue is confirmed. See ../README.md for maintenance
- * rules.
+ * Dr. Ajit Kumar moved from S7 to S9, Dr. Ravi Bhandari was added to S7, paper
+ * 57 was added to S7, and paper 35 moved from S9 to S3. On 8 October, the
+ * organizer exchanged the theme titles so S3 is “Energy Technology” and S6 is
+ * “EV Technology”, moved paper 35 to the first S3 slot and paper 23 to its
+ * final slot, and added paper 271 to the final S7 slot. The organizer also
+ * supplied the plenary speakers, available topics, and venues; Plenary Talk 3
+ * remains marked “To be announced” until its venue is confirmed. See
+ * ../README.md for maintenance rules.
  */
 window.ICPCCI_DATA = {
   "site": {
@@ -52,7 +53,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "8 October 2026, 12:45 AM IST"
+    "lastUpdated": "8 October 2026, 1:00 AM IST"
   },
   "announcements": [],
   "latestUpdates": [
@@ -227,7 +228,7 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 2 — 9 October 2026",
       "time": "11:45 AM–12:30 PM",
       "program": "Plenary Talk 5",
-      "speaker": "Mr. Ramesh Devani, Director Engineering, ASIC at eInfochips",
+      "speaker": "Mr. Ramesh Devani, Director Engineering, ASIC at eInfochips (an Arrow company)",
       "location": "L405"
     },
     {
@@ -435,8 +436,8 @@ window.ICPCCI_DATA = {
     },
     {
       "sessionNumber": 3,
-      "title": "EV Technology - I",
-      "track": "EV Technology - I",
+      "title": "Energy Technology",
+      "track": "Energy Technology",
       "date": "2026-10-08",
       "dateLabel": "Day 1 — 8 October 2026",
       "slot": "1:30–3:30 PM",
@@ -453,10 +454,10 @@ window.ICPCCI_DATA = {
       ],
       "papers": [
         {
-          "paperId": 23,
-          "title": "Bilevel Stackelberg Optimization of a Microgrid-Integrated Virtual Power Plant with Hydrogen Storage",
-          "authors": "Pandya, Vishal*",
-          "track": "EV Technology - I",
+          "paperId": 35,
+          "title": "Design and Simulation of an Extended State Observer Assisted PID Controller for Qube Servo Motor Under Mismatched Disturbances",
+          "authors": "Gandhi, Ravi ; Sheth, Saurin M. ; Parikh, Priyam*; Kuppusamy, Arunkarthikeyan ; Gandhi, Shriji V",
+          "track": "Energy Technology",
           "startTime": "1:30 PM",
           "endTime": "1:45 PM",
           "visible": true,
@@ -466,7 +467,7 @@ window.ICPCCI_DATA = {
           "paperId": 73,
           "title": "Modelling of Life Cycle Assessment of Czochralski and Float Zone Crystal Growth Method for Sustainable Nanofabrication in Semiconductors",
           "authors": "Gupta, Dileep*",
-          "track": "EV Technology - I",
+          "track": "Energy Technology",
           "startTime": "1:45 PM",
           "endTime": "2:00 PM",
           "visible": true,
@@ -476,7 +477,7 @@ window.ICPCCI_DATA = {
           "paperId": 110,
           "title": "A Single-Input Dual-Output DC–DC Converter with Adaptive Power Management and CC–CV Charging for EV Charging Stations",
           "authors": "Nallamekala, Kiran*; Pranathi, Karra; Srivastava, Ankur; Kumar, Pravin; Pavani, Menda",
-          "track": "EV Technology - I",
+          "track": "Energy Technology",
           "startTime": "2:00 PM",
           "endTime": "2:15 PM",
           "visible": true,
@@ -486,7 +487,7 @@ window.ICPCCI_DATA = {
           "paperId": 172,
           "title": "Hybrid Bioleaching and Electrochemical Recovery of Critical Metals from Spent EV Batteries Using a Ceramic Foam Electrode",
           "authors": "S, Allirani; MAHATO, DIPENDRA*; M, Bavithra Devi ; S, Mahadevavarshini",
-          "track": "EV Technology - I",
+          "track": "Energy Technology",
           "startTime": "2:15 PM",
           "endTime": "2:30 PM",
           "visible": true,
@@ -496,7 +497,7 @@ window.ICPCCI_DATA = {
           "paperId": 173,
           "title": "An IoT-Enabled Intelligent Charging Management System for Electric Vehicles with Real-Time Charging Station Reservation",
           "authors": "S, Allirani; R, Krishnakumar; MAHATO, DIPENDRA*; S, Arnesh ; A, Gowtham; N. J, Janani Priya",
-          "track": "EV Technology - I",
+          "track": "Energy Technology",
           "startTime": "2:30 PM",
           "endTime": "2:45 PM",
           "visible": true,
@@ -506,7 +507,7 @@ window.ICPCCI_DATA = {
           "paperId": 175,
           "title": "Decentralized Bidirectional Electric Vehicle Charging Using Vehicle-to-Vehicle and Vehicle-to-Grid Technologies",
           "authors": "R K , Ragavapriya; P, Maruthupandi; R, Krishnakumar; S S , Moneesha; K, Kishore; MAHATO, DIPENDRA*",
-          "track": "EV Technology - I",
+          "track": "Energy Technology",
           "startTime": "2:45 PM",
           "endTime": "3:00 PM",
           "visible": true,
@@ -516,17 +517,17 @@ window.ICPCCI_DATA = {
           "paperId": 223,
           "title": "Remaining Useful Life Estimation and Health Monitoring of EV Battery Systems Using Hybrid CNN-LSTM Deep Learning Model",
           "authors": "Gautam, Suryakant*; Gangrade, Tanisha ; Paturi, Lalitha Anoojna ; Jain, Anshika",
-          "track": "EV Technology - I",
+          "track": "Energy Technology",
           "startTime": "3:00 PM",
           "endTime": "3:15 PM",
           "visible": true,
           "order": 7
         },
         {
-          "paperId": 35,
-          "title": "Design and Simulation of an Extended State Observer Assisted PID Controller for Qube Servo Motor Under Mismatched Disturbances",
-          "authors": "Gandhi, Ravi ; Sheth, Saurin M. ; Parikh, Priyam*; Kuppusamy, Arunkarthikeyan ; Gandhi, Shriji V",
-          "track": "EV Technology - I",
+          "paperId": 23,
+          "title": "Bilevel Stackelberg Optimization of a Microgrid-Integrated Virtual Power Plant with Hydrogen Storage",
+          "authors": "Pandya, Vishal*",
+          "track": "Energy Technology",
           "startTime": "3:15 PM",
           "endTime": "3:30 PM",
           "visible": true,
@@ -764,8 +765,8 @@ window.ICPCCI_DATA = {
     },
     {
       "sessionNumber": 6,
-      "title": "Energy Technology",
-      "track": "Energy Technology",
+      "title": "EV Technology",
+      "track": "EV Technology",
       "date": "2026-10-08",
       "dateLabel": "Day 1 — 8 October 2026",
       "slot": "3:45–5:45 PM",
@@ -785,7 +786,7 @@ window.ICPCCI_DATA = {
           "paperId": 25,
           "title": "Techno-Economic Assessment of Renewable Integrated EV Charging Networks Using Walrus Optimization",
           "authors": "KR, Devabalaji *; Issac, Joyal",
-          "track": "Energy Technology",
+          "track": "EV Technology",
           "startTime": "3:45 PM",
           "endTime": "4:00 PM",
           "visible": true,
@@ -795,7 +796,7 @@ window.ICPCCI_DATA = {
           "paperId": 32,
           "title": "PV INTEGRATED MULTIFUNCTIONAL EV CHARGER",
           "authors": "SOLANKI, JAYESH*; Pandya, Mahesh ; Odedra, Rimple Odedra",
-          "track": "Energy Technology",
+          "track": "EV Technology",
           "startTime": "4:00 PM",
           "endTime": "4:15 PM",
           "visible": true,
@@ -805,7 +806,7 @@ window.ICPCCI_DATA = {
           "paperId": 95,
           "title": "A PV-Fed DC–DC Converter With SOC Estimation and Smart Battery Monitoring for EV Charging",
           "authors": "Nallamekala, Kiran*; Pranathi, Karra; Srivastava, Ankur; Pavani, Menda; Kumar, Pravin",
-          "track": "Energy Technology",
+          "track": "EV Technology",
           "startTime": "4:15 PM",
           "endTime": "4:30 PM",
           "visible": true,
@@ -815,7 +816,7 @@ window.ICPCCI_DATA = {
           "paperId": 96,
           "title": "Balanced Clamp Phase PWM for Dual Two-Level Inverter-Fed Induction Motor Drive for Electric Vehicle Application",
           "authors": "Nallamekala, Kiran*; Pavani, Menda; Srivastava, Ankur; Kumar, Pravin; Pranathi, Karra",
-          "track": "Energy Technology",
+          "track": "EV Technology",
           "startTime": "4:30 PM",
           "endTime": "4:45 PM",
           "visible": true,
@@ -825,7 +826,7 @@ window.ICPCCI_DATA = {
           "paperId": 134,
           "title": "Machine Learning Framework for Cloud-Based Electric Vehicle Oil Displacement",
           "authors": "Kumar, Akhil*",
-          "track": "Energy Technology",
+          "track": "EV Technology",
           "startTime": "4:45 PM",
           "endTime": "5:00 PM",
           "visible": true,
@@ -835,7 +836,7 @@ window.ICPCCI_DATA = {
           "paperId": 135,
           "title": "Forecasting the Adoption of Electric Vehicles Using Cloud-Based Predictive Modeling",
           "authors": "Kumar, Akhil*",
-          "track": "Energy Technology",
+          "track": "EV Technology",
           "startTime": "5:00 PM",
           "endTime": "5:15 PM",
           "visible": true,
@@ -937,6 +938,16 @@ window.ICPCCI_DATA = {
           "endTime": "10:30 AM",
           "visible": true,
           "order": 7
+        },
+        {
+          "paperId": 271,
+          "title": "Crowdsourced Roadway Event Alerting with Multi-Modal Screening and Direction-Aware DSRC Broadcasting",
+          "authors": "Mihir Vangani*; Jiten Shah; Saransh Jaiswal; Vini Shah",
+          "track": "Intelligent Infrastructure, Energy Systems and Secure Computing",
+          "startTime": "10:30 AM",
+          "endTime": "10:45 AM",
+          "visible": true,
+          "order": 8
         }
       ],
       "visible": true,

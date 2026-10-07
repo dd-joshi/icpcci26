@@ -328,8 +328,8 @@
             <div class="agenda-details">
               <strong>${escapeHtml(item.program)}</strong>
               ${item.parallel ? `<span class="agenda-badge">Parallel event</span>` : ""}
-              ${item.speaker ? `<span class="agenda-meta"><b>Speaker:</b> ${escapeHtml(item.speaker)}</span>` : ""}
-              ${item.topic ? `<span class="agenda-meta"><b>Topic:</b> ${escapeHtml(item.topic)}</span>` : ""}
+              ${item.speaker ? `<span class="agenda-meta"><b>Speaker:</b> <span>${escapeHtml(item.speaker)}</span></span>` : ""}
+              ${item.topic ? `<span class="agenda-meta"><b>Topic:</b> <span>${escapeHtml(item.topic)}</span></span>` : ""}
               ${item.location ? `<small class="agenda-location"><b>Venue:</b> ${escapeHtml(item.location)}</small>` : ""}
               ${item.note ? `<small class="agenda-note">${escapeHtml(item.note)}</small>` : ""}
             </div>
