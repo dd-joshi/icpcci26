@@ -22,6 +22,7 @@ The live technical program contains **74 unique papers in 10 theme-based session
 - Session 4 is titled **“AI for Healthcare”**.
 - Session 6 is titled **“Energy Technology”**.
 - Paper 73 is in Session 3 after paper 23, with its complete title and author entry from `Papers (7).xlsx`.
+- Paper 35 is the final Session 3 presentation at **3:15–3:30 PM**. It must not also appear in Session 9.
 - Paper 57 is in Session 7 at 10:15–10:30 AM, with its complete title and author list from `Papers (7).xlsx`.
 - Dr. Ravi Bhandari is a Session 7 chair. Dr. Ajit Kumar is a Session 9 chair.
 - Papers 225, 23, and 247 are assigned only to Sessions 8, 3, and 9 respectively. Do not recreate their routing-note rows as duplicate presentations.
@@ -43,7 +44,7 @@ Edit the `conference` object:
   "venueShort": "Short venue used in the header",
   "contact": "email@example.com",
   "officialSite": "https://example.com/",
-  "lastUpdated": "7 October 2026, 8:13 PM IST"
+  "lastUpdated": "7 October 2026, 11:19 PM IST"
 }
 ```
 
