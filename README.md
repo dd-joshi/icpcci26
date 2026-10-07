@@ -15,11 +15,14 @@ The page remains fully static. There is no database, build step, or runtime back
 
 ## Current technical-program authority
 
-The live technical program contains **72 unique papers in 10 theme-based sessions**. Session names, chairs, paper allocation, and paper sequence follow the organizer-supplied workbook `5oct.xlsx`, confirmed on 6 October 2026. Rows without a paper title or presentation mode are routing notes and are not counted as presentations. Complete author lists come from the accepted-paper export `Papers (7).xlsx`. The website assigns 15-minute presentation times in the listed paper order.
+The live technical program contains **73 unique papers in 10 theme-based sessions**. Session names, chairs, paper allocation, and paper sequence follow the organizer-supplied workbook `5oct.xlsx`, confirmed on 6 October 2026, plus the site owner's corrections confirmed on 7 October 2026. Rows without a paper title or presentation mode are routing notes and are not counted as presentations. Complete author lists come from the accepted-paper export `Papers (7).xlsx`. The website assigns 15-minute presentation times in the listed paper order.
 
 - Keep paper 237 titled **“Design and Performance Analysis of a Minimized-Switch Multilevel Inverter with Advanced PWM Control for Grid-Connected Renewable Energy Applications”** unless the site owner supplies a newer correction.
 - The site owner moved paper 224 to Session 8 on 9 October and confirmed its author as **P, Elangovan\***. Its current scheduled time is 10:00–10:15 AM. This explicit correction overrides its earlier PDF placement in Session 3.
 - Session 4 is titled **“AI for Healthcare”**.
+- Session 6 is titled **“Energy Technology”**.
+- Paper 73 is in Session 3 after paper 23, with its complete title and author entry from `Papers (7).xlsx`.
+- Dr. Ravi Bhandari is a Session 7 chair. Dr. Ajit Kumar is a Session 9 chair.
 - Papers 225, 23, and 247 are assigned only to Sessions 8, 3, and 9 respectively. Do not recreate their routing-note rows as duplicate presentations.
 - The site owner replaced every L205 session venue with **S401** and set **S401** as the venue for the Opening Ceremony and IEEE Student Branch Inauguration.
 - Session 5 runs **3:45–6:15 PM** so its 10 papers retain 15-minute presentation slots.
@@ -39,7 +42,7 @@ Edit the `conference` object:
   "venueShort": "Short venue used in the header",
   "contact": "email@example.com",
   "officialSite": "https://example.com/",
-  "lastUpdated": "6 October 2026, 12:37 AM IST"
+  "lastUpdated": "7 October 2026, 9:00 AM IST"
 }
 ```
 
@@ -67,7 +70,7 @@ Edit the `latestUpdates` array. The section stays hidden when there are no visib
 
 ```js
 {
-  "text": "Sessions last updated on 6 October 2026, 12:37 AM IST.",
+  "text": "Sessions last updated on 7 October 2026, 9:00 AM IST.",
   "visible": true,
   "order": 1
 }

@@ -5,15 +5,17 @@
  * Arrays are displayed in their written order unless an item has an `order`
  * number. Set `visible: false` to hide an item without deleting it.
  *
- * SCHEDULE AUTHORITY (6 OCTOBER 2026)
- * The 72-paper allocation, order, chairs, and venues follow 5oct.xlsx with
+ * SCHEDULE AUTHORITY (7 OCTOBER 2026)
+ * The 73-paper allocation, order, chairs, and venues follow 5oct.xlsx with
  * routing-placeholder rows removed. The workbook's internal presentation-mode
  * column is deliberately excluded from this public website and its printouts.
  * Complete author lists come from the accepted-paper export Papers (7).xlsx.
  * Owner corrections override the workbook: S4 is “AI for Healthcare”; paper
  * 224 stays in S8 with its approved title; paper 237 uses “Minimized-Switch”;
  * and S401 replaces L205. Session 5 is extended to 6:15 PM so all ten papers
- * retain 15-minute presentation slots. See ../README.md for maintenance rules.
+ * retain 15-minute presentation slots. On 7 October, paper 73 was added to S3,
+ * S6 was renamed “Energy Technology”, Dr. Ajit Kumar moved from S7 to S9, and
+ * Dr. Ravi Bhandari was added to S7. See ../README.md for maintenance rules.
  */
 window.ICPCCI_DATA = {
   "site": {
@@ -45,12 +47,12 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "6 October 2026, 12:37 AM IST"
+    "lastUpdated": "7 October 2026, 9:00 AM IST"
   },
   "announcements": [],
   "latestUpdates": [
     {
-      "text": "Sessions last updated on 6 October 2026, 12:37 AM IST.",
+      "text": "Sessions last updated on 7 October 2026, 9:00 AM IST.",
       "visible": true,
       "order": 1
     }
@@ -440,9 +442,9 @@ window.ICPCCI_DATA = {
           "order": 1
         },
         {
-          "paperId": 110,
-          "title": "A Single-Input Dual-Output DC–DC Converter with Adaptive Power Management and CC–CV Charging for EV Charging Stations",
-          "authors": "Nallamekala, Kiran*; Pranathi, Karra; Srivastava, Ankur; Kumar, Pravin; Pavani, Menda",
+          "paperId": 73,
+          "title": "Modelling of Life Cycle Assessment of Czochralski and Float Zone Crystal Growth Method for Sustainable Nanofabrication in Semiconductors",
+          "authors": "Gupta, Dileep*",
           "track": "EV Technology - I",
           "startTime": "1:45 PM",
           "endTime": "2:00 PM",
@@ -450,9 +452,9 @@ window.ICPCCI_DATA = {
           "order": 2
         },
         {
-          "paperId": 172,
-          "title": "Hybrid Bioleaching and Electrochemical Recovery of Critical Metals from Spent EV Batteries Using a Ceramic Foam Electrode",
-          "authors": "S, Allirani; MAHATO, DIPENDRA*; M, Bavithra Devi ; S, Mahadevavarshini",
+          "paperId": 110,
+          "title": "A Single-Input Dual-Output DC–DC Converter with Adaptive Power Management and CC–CV Charging for EV Charging Stations",
+          "authors": "Nallamekala, Kiran*; Pranathi, Karra; Srivastava, Ankur; Kumar, Pravin; Pavani, Menda",
           "track": "EV Technology - I",
           "startTime": "2:00 PM",
           "endTime": "2:15 PM",
@@ -460,9 +462,9 @@ window.ICPCCI_DATA = {
           "order": 3
         },
         {
-          "paperId": 173,
-          "title": "An IoT-Enabled Intelligent Charging Management System for Electric Vehicles with Real-Time Charging Station Reservation",
-          "authors": "S, Allirani; R, Krishnakumar; MAHATO, DIPENDRA*; S, Arnesh ; A, Gowtham; N. J, Janani Priya",
+          "paperId": 172,
+          "title": "Hybrid Bioleaching and Electrochemical Recovery of Critical Metals from Spent EV Batteries Using a Ceramic Foam Electrode",
+          "authors": "S, Allirani; MAHATO, DIPENDRA*; M, Bavithra Devi ; S, Mahadevavarshini",
           "track": "EV Technology - I",
           "startTime": "2:15 PM",
           "endTime": "2:30 PM",
@@ -470,9 +472,9 @@ window.ICPCCI_DATA = {
           "order": 4
         },
         {
-          "paperId": 175,
-          "title": "Decentralized Bidirectional Electric Vehicle Charging Using Vehicle-to-Vehicle and Vehicle-to-Grid Technologies",
-          "authors": "R K , Ragavapriya; P, Maruthupandi; R, Krishnakumar; S S , Moneesha; K, Kishore; MAHATO, DIPENDRA*",
+          "paperId": 173,
+          "title": "An IoT-Enabled Intelligent Charging Management System for Electric Vehicles with Real-Time Charging Station Reservation",
+          "authors": "S, Allirani; R, Krishnakumar; MAHATO, DIPENDRA*; S, Arnesh ; A, Gowtham; N. J, Janani Priya",
           "track": "EV Technology - I",
           "startTime": "2:30 PM",
           "endTime": "2:45 PM",
@@ -480,14 +482,24 @@ window.ICPCCI_DATA = {
           "order": 5
         },
         {
-          "paperId": 223,
-          "title": "Remaining Useful Life Estimation and Health Monitoring of EV Battery Systems Using Hybrid CNN-LSTM Deep Learning Model",
-          "authors": "Gautam, Suryakant*; Gangrade, Tanisha ; Paturi, Lalitha Anoojna ; Jain, Anshika",
+          "paperId": 175,
+          "title": "Decentralized Bidirectional Electric Vehicle Charging Using Vehicle-to-Vehicle and Vehicle-to-Grid Technologies",
+          "authors": "R K , Ragavapriya; P, Maruthupandi; R, Krishnakumar; S S , Moneesha; K, Kishore; MAHATO, DIPENDRA*",
           "track": "EV Technology - I",
           "startTime": "2:45 PM",
           "endTime": "3:00 PM",
           "visible": true,
           "order": 6
+        },
+        {
+          "paperId": 223,
+          "title": "Remaining Useful Life Estimation and Health Monitoring of EV Battery Systems Using Hybrid CNN-LSTM Deep Learning Model",
+          "authors": "Gautam, Suryakant*; Gangrade, Tanisha ; Paturi, Lalitha Anoojna ; Jain, Anshika",
+          "track": "EV Technology - I",
+          "startTime": "3:00 PM",
+          "endTime": "3:15 PM",
+          "visible": true,
+          "order": 7
         }
       ],
       "visible": true,
@@ -721,8 +733,8 @@ window.ICPCCI_DATA = {
     },
     {
       "sessionNumber": 6,
-      "title": "EV Technology - II",
-      "track": "EV Technology - II",
+      "title": "Energy Technology",
+      "track": "Energy Technology",
       "date": "2026-10-08",
       "dateLabel": "Day 1 — 8 October 2026",
       "slot": "3:45–5:45 PM",
@@ -742,7 +754,7 @@ window.ICPCCI_DATA = {
           "paperId": 25,
           "title": "Techno-Economic Assessment of Renewable Integrated EV Charging Networks Using Walrus Optimization",
           "authors": "KR, Devabalaji *; Issac, Joyal",
-          "track": "EV Technology - II",
+          "track": "Energy Technology",
           "startTime": "3:45 PM",
           "endTime": "4:00 PM",
           "visible": true,
@@ -752,7 +764,7 @@ window.ICPCCI_DATA = {
           "paperId": 32,
           "title": "PV INTEGRATED MULTIFUNCTIONAL EV CHARGER",
           "authors": "SOLANKI, JAYESH*; Pandya, Mahesh ; Odedra, Rimple Odedra",
-          "track": "EV Technology - II",
+          "track": "Energy Technology",
           "startTime": "4:00 PM",
           "endTime": "4:15 PM",
           "visible": true,
@@ -762,7 +774,7 @@ window.ICPCCI_DATA = {
           "paperId": 95,
           "title": "A PV-Fed DC–DC Converter With SOC Estimation and Smart Battery Monitoring for EV Charging",
           "authors": "Nallamekala, Kiran*; Pranathi, Karra; Srivastava, Ankur; Pavani, Menda; Kumar, Pravin",
-          "track": "EV Technology - II",
+          "track": "Energy Technology",
           "startTime": "4:15 PM",
           "endTime": "4:30 PM",
           "visible": true,
@@ -772,7 +784,7 @@ window.ICPCCI_DATA = {
           "paperId": 96,
           "title": "Balanced Clamp Phase PWM for Dual Two-Level Inverter-Fed Induction Motor Drive for Electric Vehicle Application",
           "authors": "Nallamekala, Kiran*; Pavani, Menda; Srivastava, Ankur; Kumar, Pravin; Pranathi, Karra",
-          "track": "EV Technology - II",
+          "track": "Energy Technology",
           "startTime": "4:30 PM",
           "endTime": "4:45 PM",
           "visible": true,
@@ -782,7 +794,7 @@ window.ICPCCI_DATA = {
           "paperId": 134,
           "title": "Machine Learning Framework for Cloud-Based Electric Vehicle Oil Displacement",
           "authors": "Kumar, Akhil*",
-          "track": "EV Technology - II",
+          "track": "Energy Technology",
           "startTime": "4:45 PM",
           "endTime": "5:00 PM",
           "visible": true,
@@ -792,7 +804,7 @@ window.ICPCCI_DATA = {
           "paperId": 135,
           "title": "Forecasting the Adoption of Electric Vehicles Using Cloud-Based Predictive Modeling",
           "authors": "Kumar, Akhil*",
-          "track": "EV Technology - II",
+          "track": "Energy Technology",
           "startTime": "5:00 PM",
           "endTime": "5:15 PM",
           "visible": true,
@@ -820,8 +832,8 @@ window.ICPCCI_DATA = {
           "affiliation": "VIT Bhopal"
         },
         {
-          "name": "Dr. Ajit Kumar",
-          "affiliation": "IITRAM"
+          "name": "Dr. Ravi Bhandari",
+          "affiliation": ""
         }
       ],
       "papers": [
@@ -1007,6 +1019,10 @@ window.ICPCCI_DATA = {
         },
         {
           "name": "Dr. Rahul Kumar",
+          "affiliation": "IITRAM"
+        },
+        {
+          "name": "Dr. Ajit Kumar",
           "affiliation": "IITRAM"
         }
       ],
