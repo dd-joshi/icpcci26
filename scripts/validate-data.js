@@ -85,6 +85,18 @@ if (data) {
   (data.agenda || []).forEach((item, index) => {
     if (item.visible === false) return;
     ["dateLabel", "time", "program"].forEach((key) => requireText(item, key, `agenda[${index}]`));
+    ["speaker", "topic", "note"].forEach((key) => {
+      if (item[key] !== undefined) requireText(item, key, `agenda[${index}]`);
+    });
+    if (item.location !== undefined && typeof item.location !== "string") {
+      fail(`agenda[${index}].location must be a string when provided.`);
+    }
+    if (item.parallel !== undefined && typeof item.parallel !== "boolean") {
+      fail(`agenda[${index}].parallel must be a boolean when provided.`);
+    }
+    if (/\b(?:am|pm)\b/.test(item.time)) {
+      fail(`agenda[${index}].time must use uppercase AM/PM.`);
+    }
   });
 
   (data.sessions || []).forEach((session, sessionIndex) => {

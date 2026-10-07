@@ -131,8 +131,13 @@ main.shell { padding-block: 34px 56px; }
 .agenda-row { display: grid; grid-template-columns: 130px 1fr; gap: 14px; padding: 12px 18px; border-top: 1px solid #edf1f5; }
 .agenda-row time { font-weight: 800; color: var(--navy); }
 .agenda-row strong { display: block; }
-.agenda-row small { color: var(--muted); }
+.agenda-details { min-width: 0; }
+.agenda-meta, .agenda-row small { display: block; margin-top: 4px; color: var(--muted); font-size: .87rem; line-height: 1.35; }
+.agenda-meta b, .agenda-row small b { color: var(--navy); }
+.agenda-badge { display: inline-flex; margin-top: 6px; padding: 2px 8px; border-radius: 999px; background: var(--teal); color: white; font-size: .72rem; font-weight: 800; letter-spacing: .03em; text-transform: uppercase; }
+.agenda-note { padding-left: 10px; border-left: 3px solid var(--teal); }
 .agenda-row.is-technical { background: var(--gold-soft); }
+.agenda-row.is-parallel { background: #eef9f8; box-shadow: inset 4px 0 var(--teal); }
 
 .guests { padding: 46px 0 52px; background: white; }
 .guests h2 { margin: 0; font-size: clamp(1.7rem, 4vw, 2.5rem); }

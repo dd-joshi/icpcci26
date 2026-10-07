@@ -323,9 +323,16 @@
       <article class="agenda-day">
         <h3>${escapeHtml(dateLabel)}</h3>
         ${items.map((item) => `
-          <div class="agenda-row ${item.technical ? "is-technical" : ""}">
+          <div class="agenda-row ${item.technical ? "is-technical" : ""} ${item.parallel ? "is-parallel" : ""}">
             <time>${escapeHtml(item.time)}</time>
-            <div><strong>${escapeHtml(item.program)}</strong>${item.location ? `<small>${escapeHtml(item.location)}</small>` : ""}</div>
+            <div class="agenda-details">
+              <strong>${escapeHtml(item.program)}</strong>
+              ${item.parallel ? `<span class="agenda-badge">Parallel event</span>` : ""}
+              ${item.speaker ? `<span class="agenda-meta"><b>Speaker:</b> ${escapeHtml(item.speaker)}</span>` : ""}
+              ${item.topic ? `<span class="agenda-meta"><b>Topic:</b> ${escapeHtml(item.topic)}</span>` : ""}
+              ${item.location ? `<small class="agenda-location"><b>Venue:</b> ${escapeHtml(item.location)}</small>` : ""}
+              ${item.note ? `<small class="agenda-note">${escapeHtml(item.note)}</small>` : ""}
+            </div>
           </div>
         `).join("")}
       </article>
