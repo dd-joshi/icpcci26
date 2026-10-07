@@ -169,6 +169,12 @@ footer { padding: 34px 0; background: var(--navy); color: #c4d0e0; }
 .footer-grid p { margin: 7px 0 0; }
 .footer-grid a { color: var(--gold); }
 
+.back-to-top { position: fixed; right: 20px; bottom: 20px; z-index: 80; min-width: 48px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; padding: 8px 13px; background: var(--navy); color: white; box-shadow: 0 8px 24px rgba(7,22,45,.25); font-size: .82rem; font-weight: 800; cursor: pointer; }
+.back-to-top[hidden] { display: none; }
+.back-to-top span[aria-hidden="true"] { color: var(--gold); font-size: 1rem; line-height: 1; }
+.back-to-top:hover { background: var(--navy-3); transform: translateY(-1px); }
+.back-to-top:focus-visible { outline: 3px solid rgba(255,184,28,.45); outline-offset: 3px; }
+
 @media (max-width: 900px) {
   .brand-row { grid-template-columns: auto 1fr; }
   .event-meta { justify-content: flex-end; }
@@ -213,6 +219,7 @@ footer { padding: 34px 0; background: var(--navy); color: #c4d0e0; }
   .logo-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .guest-card { grid-template-columns: 82px 1fr; gap: 14px; }
   .guest-photo { width: 82px; }
+  .back-to-top { right: 12px; bottom: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -231,7 +238,7 @@ footer { padding: 34px 0; background: var(--navy); color: #c4d0e0; }
   html, body { width: auto; min-width: 0; background: white; color: #07162d; font: 9pt/1.25 Arial, sans-serif; }
   .site-header, .announcement-bar, .latest-updates, .intro, .partners, .program-toolbar, .filter-panel,
   .results-summary, .day-heading, .session-head, #agendaView, .guests, .presenter-note,
-  footer, .skip-link, .empty-state { display: none !important; }
+  footer, .skip-link, .empty-state, .back-to-top { display: none !important; }
   main.shell { width: 100%; margin: 0; padding: 0; }
   #papersView, .session-list, .day-group { display: block !important; }
   .print-only { display: block; }
