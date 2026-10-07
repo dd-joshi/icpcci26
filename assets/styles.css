@@ -133,7 +133,10 @@ main.shell { padding-block: 34px 56px; }
 .agenda-row strong { display: block; }
 .agenda-details { min-width: 0; }
 .agenda-meta, .agenda-row small { display: block; margin-top: 4px; color: var(--muted); font-size: .87rem; line-height: 1.35; }
-.agenda-meta b, .agenda-row small b { color: var(--navy); }
+.agenda-meta { color: var(--navy); }
+.agenda-meta b { color: var(--teal); font-weight: 800; }
+.agenda-meta span { font-weight: 650; }
+.agenda-row small b { color: var(--navy); }
 .agenda-badge { display: inline-flex; margin-top: 6px; padding: 2px 8px; border-radius: 999px; background: var(--teal); color: white; font-size: .72rem; font-weight: 800; letter-spacing: .03em; text-transform: uppercase; }
 .agenda-note { padding-left: 10px; border-left: 3px solid var(--teal); }
 .agenda-row.is-technical { background: var(--gold-soft); }
