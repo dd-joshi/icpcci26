@@ -16,7 +16,8 @@
  * retain 15-minute presentation slots. On 7 October, paper 73 was added to S3,
  * S6 was renamed “Energy Technology”, Dr. Ajit Kumar moved from S7 to S9, and
  * Dr. Ravi Bhandari was added to S7. Paper 57 was added to the final available
- * S7 presentation slot on 7 October. See ../README.md for maintenance rules.
+ * S7 presentation slot, and paper 35 moved from S9 to the final S3 slot on
+ * 7 October. See ../README.md for maintenance rules.
  */
 window.ICPCCI_DATA = {
   "site": {
@@ -48,7 +49,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "7 October 2026, 8:13 PM IST"
+    "lastUpdated": "7 October 2026, 11:19 PM IST"
   },
   "announcements": [],
   "latestUpdates": [
@@ -501,6 +502,16 @@ window.ICPCCI_DATA = {
           "endTime": "3:15 PM",
           "visible": true,
           "order": 7
+        },
+        {
+          "paperId": 35,
+          "title": "Design and Simulation of an Extended State Observer Assisted PID Controller for Qube Servo Motor Under Mismatched Disturbances",
+          "authors": "Gandhi, Ravi ; Sheth, Saurin M. ; Parikh, Priyam*; Kuppusamy, Arunkarthikeyan ; Gandhi, Shriji V",
+          "track": "EV Technology - I",
+          "startTime": "3:15 PM",
+          "endTime": "3:30 PM",
+          "visible": true,
+          "order": 8
         }
       ],
       "visible": true,
@@ -1069,9 +1080,9 @@ window.ICPCCI_DATA = {
           "order": 3
         },
         {
-          "paperId": 35,
-          "title": "Design and Simulation of an Extended State Observer Assisted PID Controller for Qube Servo Motor Under Mismatched Disturbances",
-          "authors": "Gandhi, Ravi ; Sheth, Saurin M. ; Parikh, Priyam*; Kuppusamy, Arunkarthikeyan ; Gandhi, Shriji V",
+          "paperId": 67,
+          "title": "Design and Experimental Evaluation of an Output Conditioning and Monitoring System for Human Driven Kinetic Energy Recovery Applications",
+          "authors": "Washimkar, Dinesh*; Butala, Shlok",
           "track": "Control Systems",
           "startTime": "2:15 PM",
           "endTime": "2:30 PM",
@@ -1079,9 +1090,9 @@ window.ICPCCI_DATA = {
           "order": 4
         },
         {
-          "paperId": 67,
-          "title": "Design and Experimental Evaluation of an Output Conditioning and Monitoring System for Human Driven Kinetic Energy Recovery Applications",
-          "authors": "Washimkar, Dinesh*; Butala, Shlok",
+          "paperId": 97,
+          "title": "Experimental Performance Evaluation of a Heavy-Payload Quadrotor UAV Under Reduced Air Density Through High-Altitude Flight Testing",
+          "authors": "Surani, Harikrushn*",
           "track": "Control Systems",
           "startTime": "2:30 PM",
           "endTime": "2:45 PM",
@@ -1089,9 +1100,9 @@ window.ICPCCI_DATA = {
           "order": 5
         },
         {
-          "paperId": 97,
-          "title": "Experimental Performance Evaluation of a Heavy-Payload Quadrotor UAV Under Reduced Air Density Through High-Altitude Flight Testing",
-          "authors": "Surani, Harikrushn*",
+          "paperId": 106,
+          "title": "Cross-Temperature Generalisation of a Bidirectional LSTM Network for State of Charge Estimation in Lithium-Ion Batteries",
+          "authors": "Nambiar, Shyni*",
           "track": "Control Systems",
           "startTime": "2:45 PM",
           "endTime": "3:00 PM",
@@ -1099,24 +1110,14 @@ window.ICPCCI_DATA = {
           "order": 6
         },
         {
-          "paperId": 106,
-          "title": "Cross-Temperature Generalisation of a Bidirectional LSTM Network for State of Charge Estimation in Lithium-Ion Batteries",
-          "authors": "Nambiar, Shyni*",
+          "paperId": 247,
+          "title": "A Dual-Loop PI Control Strategy for a Single-Phase Full-Bridge Inverter with Adaptive 50 Hz/60 Hz Operation Using SPWM",
+          "authors": "P, Elangovan*",
           "track": "Control Systems",
           "startTime": "3:00 PM",
           "endTime": "3:15 PM",
           "visible": true,
           "order": 7
-        },
-        {
-          "paperId": 247,
-          "title": "A Dual-Loop PI Control Strategy for a Single-Phase Full-Bridge Inverter with Adaptive 50 Hz/60 Hz Operation Using SPWM",
-          "authors": "P, Elangovan*",
-          "track": "Control Systems",
-          "startTime": "3:15 PM",
-          "endTime": "3:30 PM",
-          "visible": true,
-          "order": 8
         }
       ],
       "visible": true,
