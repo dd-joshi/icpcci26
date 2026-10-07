@@ -387,6 +387,19 @@
     document.querySelector("#agendaView").hidden = view !== "agenda";
   }));
 
+  const backToTop = document.querySelector("#backToTop");
+  if (backToTop) {
+    const updateBackToTopVisibility = () => {
+      backToTop.hidden = window.scrollY < 480;
+    };
+    backToTop.addEventListener("click", () => {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    });
+    window.addEventListener("scroll", updateBackToTopVisibility, { passive: true });
+    updateBackToTopVisibility();
+  }
+
   renderSiteContent();
   renderAgenda();
   render();

@@ -6,7 +6,7 @@
  * number. Set `visible: false` to hide an item without deleting it.
  *
  * SCHEDULE AUTHORITY (7 OCTOBER 2026)
- * The 73-paper allocation, order, chairs, and venues follow 5oct.xlsx with
+ * The 74-paper allocation, order, chairs, and venues follow 5oct.xlsx with
  * routing-placeholder rows removed. The workbook's internal presentation-mode
  * column is deliberately excluded from this public website and its printouts.
  * Complete author lists come from the accepted-paper export Papers (7).xlsx.
@@ -15,7 +15,8 @@
  * and S401 replaces L205. Session 5 is extended to 6:15 PM so all ten papers
  * retain 15-minute presentation slots. On 7 October, paper 73 was added to S3,
  * S6 was renamed “Energy Technology”, Dr. Ajit Kumar moved from S7 to S9, and
- * Dr. Ravi Bhandari was added to S7. See ../README.md for maintenance rules.
+ * Dr. Ravi Bhandari was added to S7. Paper 57 was added to the final available
+ * S7 presentation slot on 7 October. See ../README.md for maintenance rules.
  */
 window.ICPCCI_DATA = {
   "site": {
@@ -47,12 +48,12 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "7 October 2026, 9:00 AM IST"
+    "lastUpdated": "7 October 2026, 8:13 PM IST"
   },
   "announcements": [],
   "latestUpdates": [
     {
-      "text": "Please check this space for the latest conference news and updates.",
+      "text": "Student participants must carry their institute ID cards.",
       "visible": true,
       "order": 1
     }
@@ -896,6 +897,16 @@ window.ICPCCI_DATA = {
           "endTime": "10:15 AM",
           "visible": true,
           "order": 6
+        },
+        {
+          "paperId": 57,
+          "title": "Design and Performance Evaluation of 8T SRAM Across CMOS, TFET, FinFET and CNFET Technologies",
+          "authors": "BHARODIYA, RAJVI*; Hale, Saujanya",
+          "track": "Intelligent Infrastructure, Energy Systems and Secure Computing",
+          "startTime": "10:15 AM",
+          "endTime": "10:30 AM",
+          "visible": true,
+          "order": 7
         }
       ],
       "visible": true,
