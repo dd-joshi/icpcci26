@@ -5,7 +5,7 @@
  * Arrays are displayed in their written order unless an item has an `order`
  * number. Set `visible: false` to hide an item without deleting it.
  *
- * SCHEDULE AUTHORITY (7 OCTOBER 2026)
+ * SCHEDULE AUTHORITY (8 OCTOBER 2026)
  * The 74-paper allocation, order, chairs, and venues follow 5oct.xlsx with
  * routing-placeholder rows removed. The workbook's internal presentation-mode
  * column is deliberately excluded from this public website and its printouts.
@@ -17,7 +17,10 @@
  * S6 was renamed “Energy Technology”, Dr. Ajit Kumar moved from S7 to S9, and
  * Dr. Ravi Bhandari was added to S7. Paper 57 was added to the final available
  * S7 presentation slot, and paper 35 moved from S9 to the final S3 slot on
- * 7 October. See ../README.md for maintenance rules.
+ * 7 October. On 8 October, the organizer supplied the plenary speakers,
+ * available topics, and venues; Plenary Talk 3 remains marked “To be
+ * announced” until its venue is confirmed. See ../README.md for maintenance
+ * rules.
  */
 window.ICPCCI_DATA = {
   "site": {
@@ -34,7 +37,7 @@ window.ICPCCI_DATA = {
     "conferenceDays": 2,
     "agendaEyebrow": "Program at a glance",
     "agendaTitle": "Two-day conference schedule",
-    "agendaDescription": "Theme-based technical-session timings below link directly to the detailed sessions. All other events follow the conference schedule supplied by the organizers.",
+    "agendaDescription": "Complete conference timings, plenary speakers, topics, and venues. Parallel activities are identified where schedules overlap.",
     "guestsEyebrow": "Guests & speakers",
     "guestsTitle": "Meet our distinguished guests",
     "partnersEyebrow": "Sponsors & partners",
@@ -49,7 +52,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "7 October 2026, 11:19 PM IST"
+    "lastUpdated": "8 October 2026, 12:45 AM IST"
   },
   "announcements": [],
   "latestUpdates": [
@@ -127,7 +130,7 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 1 — 8 October 2026",
       "time": "9:30–10:30 AM",
       "program": "Opening Ceremony",
-      "location": "S401"
+      "location": "S101"
     },
     {
       "dateLabel": "Day 1 — 8 October 2026",
@@ -139,12 +142,16 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 1 — 8 October 2026",
       "time": "11:00–11:45 AM",
       "program": "Plenary Talk 1",
+      "speaker": "Dr. Rajeev Jyoti, Director Technical, IN-SPACe, Government of India",
+      "topic": "Space Technologies Opportunities: What Is New? What Is Next?",
       "location": "S101"
     },
     {
       "dateLabel": "Day 1 — 8 October 2026",
       "time": "11:45 AM–12:30 PM",
       "program": "Plenary Talk 2",
+      "speaker": "Dr. Jignesh Patoliya, Senior Design Verification Engineer, eInfochips (an Arrow company)",
+      "topic": "Inside Future Through Technology and Your HIGHWAY to Growth",
       "location": "S101"
     },
     {
@@ -165,6 +172,16 @@ window.ICPCCI_DATA = {
       "time": "3:30–3:45 PM",
       "program": "High Tea & Networking",
       "location": ""
+    },
+    {
+      "dateLabel": "Day 1 — 8 October 2026",
+      "time": "3:30–4:15 PM",
+      "program": "Plenary Talk 3",
+      "speaker": "Prof. Abhishek, IIT Kanpur",
+      "topic": "Design of Heavy Lift Drones for High Altitude",
+      "location": "To be announced",
+      "parallel": true,
+      "note": "Runs in parallel with High Tea & Networking from 3:30–3:45 PM and the opening of Theme-Based Session 4 from 3:45–4:15 PM."
     },
     {
       "dateLabel": "Day 1 — 8 October 2026",
@@ -202,14 +219,16 @@ window.ICPCCI_DATA = {
     {
       "dateLabel": "Day 2 — 9 October 2026",
       "time": "11:00–11:45 AM",
-      "program": "Plenary Talk 3",
-      "location": ""
+      "program": "Plenary Talk 4",
+      "speaker": "Prof. Ragavan K., IIT Gandhinagar",
+      "location": "L405"
     },
     {
       "dateLabel": "Day 2 — 9 October 2026",
       "time": "11:45 AM–12:30 PM",
-      "program": "Plenary Talk 4",
-      "location": ""
+      "program": "Plenary Talk 5",
+      "speaker": "Mr. Ramesh Devani, Director Engineering, ASIC at eInfochips",
+      "location": "L405"
     },
     {
       "dateLabel": "Day 2 — 9 October 2026",

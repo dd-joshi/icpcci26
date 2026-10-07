@@ -26,7 +26,8 @@ The live technical program contains **74 unique papers in 10 theme-based session
 - Paper 57 is in Session 7 at 10:15–10:30 AM, with its complete title and author list from `Papers (7).xlsx`.
 - Dr. Ravi Bhandari is a Session 7 chair. Dr. Ajit Kumar is a Session 9 chair.
 - Papers 225, 23, and 247 are assigned only to Sessions 8, 3, and 9 respectively. Do not recreate their routing-note rows as duplicate presentations.
-- The site owner replaced every L205 session venue with **S401** and set **S401** as the venue for the Opening Ceremony and IEEE Student Branch Inauguration.
+- The site owner replaced every L205 session venue with **S401**. The Opening Ceremony is in **S101**, and the IEEE Student Branch Inauguration remains in **S401**.
+- Plenary Talks 1–3 take place on 8 October, followed by Plenary Talks 4–5 on 9 October. Plenary Talk 3 runs from **3:30–4:15 PM** in parallel with High Tea and the opening of Session 4; keep its venue as **“To be announced”** until the organizer confirms it.
 - Session 5 runs **3:45–6:15 PM** so its 10 papers retain 15-minute presentation slots.
 - Presentation-mode information is internal operational data. Do not copy it into the public data file, page, print layout, labels, chair details, or documentation examples.
 - Do not regroup papers by their older discipline labels. The current public program uses the theme-based session titles stored on each session and paper.
@@ -129,6 +130,25 @@ This works for announcements, guests, presenter points, partners, agenda items, 
 When moving a session, update its `date`, `dateLabel`, `slot`, and `room` together. When moving a paper, update `startTime` and `endTime`. If the general timetable changes, also update the matching item in `agenda`.
 
 Session chair names appear in a compact line under the session title. Their affiliations remain in the A4 print header. Update both from each session's `chairs` array; do not hardcode chair names in HTML.
+
+### Add or update a plenary talk
+
+Add plenary details to the matching `agenda` item. The `speaker`, `topic`, `note`, and `parallel` fields are optional, so omit a field when the organizer has not supplied it. The page does not reserve blank space for omitted fields.
+
+```js
+{
+  "dateLabel": "Day 1 — 8 October 2026",
+  "time": "11:00–11:45 AM",
+  "program": "Plenary Talk 1",
+  "speaker": "Speaker name and affiliation",
+  "topic": "Confirmed talk topic",
+  "location": "S101",
+  "parallel": false,
+  "note": "Optional scheduling note"
+}
+```
+
+Use uppercase `AM` and `PM`, one space before them, an en dash (`–`) for time ranges, and consistent room labels. Use **“To be announced”** for a pending venue only when the organizer explicitly asks for that public wording.
 
 ### Add a paper
 
