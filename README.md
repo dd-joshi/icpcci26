@@ -178,7 +178,7 @@ Numeric searches are treated as exact paper-ID searches. For example, both `30` 
 The regular website and the notice-board printout use the same schedule data; there is no separate print page to maintain.
 
 1. Open **Technical program**.
-2. Choose one value under **Session theme**. Each of the 10 themes identifies one session.
+2. Choose one value under **Session theme**. The menu is ordered by session number and labels every option as **S1: Theme** through **S10: Theme**.
 3. Select **Print Session _n_**, or press **Ctrl+P**.
 4. Keep the paper size at **A4** and orientation at **Landscape**.
 
