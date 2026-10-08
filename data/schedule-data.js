@@ -6,7 +6,7 @@
  * number. Set `visible: false` to hide an item without deleting it.
  *
  * SCHEDULE AUTHORITY (8 OCTOBER 2026)
- * The 74-paper allocation, order, chairs, and venues follow 5oct.xlsx with
+ * The original allocation, order, chairs, and venues follow 5oct.xlsx with
  * routing-placeholder rows removed. The workbook's internal presentation-mode
  * column is deliberately excluded from this public website and its printouts.
  * Complete author lists come from the accepted-paper export Papers (7).xlsx.
@@ -18,8 +18,10 @@
  * 57 was added to S7, and paper 35 moved from S9 to S3. On 8 October, the
  * organizer exchanged the theme titles so S3 is “Energy Technology” and S6 is
  * “EV Technology”, moved paper 35 to the first S3 slot and paper 23 to its
- * final slot, and added paper 271 to the final S7 slot. The organizer also
- * supplied the plenary speakers, available topics, and venues; Plenary Talk 3
+ * final slot, and added paper 271 to S7. Papers 222 and 144 were then added as
+ * the final presentations in S7 and S9 respectively, bringing the program to
+ * 77 unique papers. The organizer also supplied the plenary speakers, available
+ * topics, and venues; Plenary Talk 3
  * remains marked “To be announced” until its venue is confirmed. See
  * ../README.md for maintenance rules.
  */
@@ -53,7 +55,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "8 October 2026, 1:00 AM IST"
+    "lastUpdated": "8 October 2026, 9:58 AM IST"
   },
   "announcements": [],
   "latestUpdates": [
@@ -216,6 +218,15 @@ window.ICPCCI_DATA = {
       "time": "10:45–11:00 AM",
       "program": "High Tea & Networking",
       "location": ""
+    },
+    {
+      "dateLabel": "Day 2 — 9 October 2026",
+      "time": "10:45–11:00 AM",
+      "program": "Theme-Based Session 7 — Final Presentation",
+      "location": "L305",
+      "technical": true,
+      "parallel": true,
+      "note": "Runs in parallel with High Tea & Networking."
     },
     {
       "dateLabel": "Day 2 — 9 October 2026",
@@ -852,7 +863,7 @@ window.ICPCCI_DATA = {
       "track": "Intelligent Infrastructure, Energy Systems and Secure Computing",
       "date": "2026-10-09",
       "dateLabel": "Day 2 — 9 October 2026",
-      "slot": "8:45–10:45 AM",
+      "slot": "8:45–11:00 AM",
       "room": "L305",
       "chairs": [
         {
@@ -948,6 +959,16 @@ window.ICPCCI_DATA = {
           "endTime": "10:45 AM",
           "visible": true,
           "order": 8
+        },
+        {
+          "paperId": 222,
+          "title": "Sustainable Green Analytical Framework Using Machine Learning for Forensic and Environmental Applications",
+          "authors": "Rafi, Aisha; Dutta, Ritam*; Singh, Suraj; Thapar, Shruti; Singh Maan, Ravinder; Kumar Katara, Yash",
+          "track": "Intelligent Infrastructure, Energy Systems and Secure Computing",
+          "startTime": "10:45 AM",
+          "endTime": "11:00 AM",
+          "visible": true,
+          "order": 9
         }
       ],
       "visible": true,
@@ -1148,6 +1169,16 @@ window.ICPCCI_DATA = {
           "endTime": "3:15 PM",
           "visible": true,
           "order": 7
+        },
+        {
+          "paperId": 144,
+          "title": "Machine Learning Based Energy Management Strategy for Efficient Power Distribution in Hybrid Electric Vehicles",
+          "authors": "Duchakke, Ashish K.; Malkhandale, Ujwala B.; Dutta, Ritam*; Thapar, Shruti; Kaur, Mandeep; Singh Maan, Ravinder",
+          "track": "Control Systems",
+          "startTime": "3:15 PM",
+          "endTime": "3:30 PM",
+          "visible": true,
+          "order": 8
         }
       ],
       "visible": true,

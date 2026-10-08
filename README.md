@@ -15,14 +15,15 @@ The page remains fully static. There is no database, build step, or runtime back
 
 ## Current technical-program authority
 
-The live technical program contains **75 unique papers in 10 theme-based sessions**. Session names, chairs, paper allocation, and paper sequence follow the organizer-supplied workbook `5oct.xlsx`, confirmed on 6 October 2026, plus the site owner's corrections confirmed through 8 October 2026. Rows without a paper title or presentation mode are routing notes and are not counted as presentations. Complete author lists come from the accepted-paper export `Papers (7).xlsx` and later organizer-supplied additions. The website assigns 15-minute presentation times in the listed paper order.
+The live technical program contains **77 unique papers in 10 theme-based sessions**. Session names, chairs, paper allocation, and paper sequence follow the organizer-supplied workbook `5oct.xlsx`, confirmed on 6 October 2026, plus the site owner's corrections confirmed through 8 October 2026. Rows without a paper title or presentation mode are routing notes and are not counted as presentations. Complete author lists come from the accepted-paper export `Papers (7).xlsx` and later organizer-supplied additions. The website assigns 15-minute presentation times in the listed paper order.
 
 - Keep paper 237 titled **“Design and Performance Analysis of a Minimized-Switch Multilevel Inverter with Advanced PWM Control for Grid-Connected Renewable Energy Applications”** unless the site owner supplies a newer correction.
 - The site owner moved paper 224 to Session 8 on 9 October and confirmed its author as **P, Elangovan\***. Its current scheduled time is 10:00–10:15 AM. This explicit correction overrides its earlier PDF placement in Session 3.
 - Session 4 is titled **“AI for Healthcare”**.
 - Session 3 is titled **“Energy Technology”**, and Session 6 is titled **“EV Technology”**.
 - Paper 35 is the first Session 3 presentation at **1:30–1:45 PM**, followed by paper 73. Paper 23 is the final Session 3 presentation at **3:15–3:30 PM**. Paper 35 must not also appear in Session 9.
-- Paper 57 is in Session 7 at **10:15–10:30 AM**. Paper 271 follows it in the final Session 7 slot at **10:30–10:45 AM**.
+- Paper 57 is in Session 7 at **10:15–10:30 AM**, followed by paper 271 at **10:30–10:45 AM**. Paper 222 is the final Session 7 presentation at **10:45–11:00 AM**, in parallel with High Tea & Networking.
+- Paper 144 is the final Session 9 presentation at **3:15–3:30 PM**.
 - Dr. Ravi Bhandari is a Session 7 chair. Dr. Ajit Kumar is a Session 9 chair.
 - Papers 225, 23, and 247 are assigned only to Sessions 8, 3, and 9 respectively. Do not recreate their routing-note rows as duplicate presentations.
 - The site owner replaced every L205 session venue with **S401**. The Opening Ceremony is in **S101**, and the IEEE Student Branch Inauguration remains in **S401**.
