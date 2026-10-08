@@ -15,13 +15,14 @@ The page remains fully static. There is no database, build step, or runtime back
 
 ## Current technical-program authority
 
-The live technical program contains **77 unique papers in 10 theme-based sessions**. Session names, chairs, paper allocation, and paper sequence follow the organizer-supplied workbook `5oct.xlsx`, confirmed on 6 October 2026, plus the site owner's corrections confirmed through 8 October 2026. Rows without a paper title or presentation mode are routing notes and are not counted as presentations. Complete author lists come from the accepted-paper export `Papers (7).xlsx` and later organizer-supplied additions. The website assigns 15-minute presentation times in the listed paper order.
+The live technical program contains **76 unique papers in 10 theme-based sessions**. Session names, chairs, paper allocation, and paper sequence follow the organizer-supplied workbook `5oct.xlsx`, confirmed on 6 October 2026, plus the site owner's corrections confirmed through 8 October 2026. Rows without a paper title or presentation mode are routing notes and are not counted as presentations. Complete author lists come from the accepted-paper export `Papers (7).xlsx` and later organizer-supplied additions. The website assigns 15-minute presentation times in the listed paper order.
 
 - Keep paper 237 titled **“Design and Performance Analysis of a Minimized-Switch Multilevel Inverter with Advanced PWM Control for Grid-Connected Renewable Energy Applications”** unless the site owner supplies a newer correction.
 - The site owner moved paper 224 to Session 8 on 9 October and confirmed its author as **P, Elangovan\***. Its current scheduled time is 10:00–10:15 AM. This explicit correction overrides its earlier PDF placement in Session 3.
 - Session 4 is titled **“AI for Healthcare”**.
 - Session 3 is titled **“Energy Technology”**, and Session 6 is titled **“EV Technology”**.
 - Paper 35 is the first Session 3 presentation at **1:30–1:45 PM**, followed by paper 73. Paper 23 is the final Session 3 presentation at **3:15–3:30 PM**. Paper 35 must not also appear in Session 9.
+- Paper 110 was removed from Session 3. Keep **2:00–2:15 PM** unassigned and preserve every other Session 3 paper time unless the site owner supplies a new sequence.
 - Paper 57 is in Session 7 at **10:15–10:30 AM**, followed by paper 271 at **10:30–10:45 AM**. Paper 222 is the final Session 7 presentation at **10:45–11:00 AM**, in parallel with High Tea & Networking.
 - Paper 144 is the final Session 9 presentation at **3:15–3:30 PM**.
 - Dr. Ravi Bhandari is a Session 7 chair. Dr. Ajit Kumar is a Session 9 chair.
@@ -128,6 +129,8 @@ Collections display in array order by default. For explicit ordering, add numeri
 This works for announcements, guests, presenter points, partners, agenda items, sessions, and papers. Set `visible: false` on any item to hide it without deleting it.
 
 When moving a session, update its `date`, `dateLabel`, `slot`, and `room` together. When moving a paper, update `startTime` and `endTime`. If the general timetable changes, also update the matching item in `agenda`.
+
+Visible paper times must normally be contiguous. Set a session's `allowTimeGaps` field to `true` only when the organizer confirms an intentionally unassigned slot, and document that slot in the authority notes above.
 
 Session chair names appear in a compact line under the session title. Their affiliations remain in the A4 print header. Update both from each session's `chairs` array; do not hardcode chair names in HTML.
 
