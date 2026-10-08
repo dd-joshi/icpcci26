@@ -54,7 +54,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "8 October 2026, 12:34 PM IST"
+    "lastUpdated": "8 October 2026, 2:00 PM IST"
   },
   "announcements": [],
   "latestUpdates": [

@@ -201,9 +201,15 @@
     select.append(option);
   });
 
-  const themes = unique(sessions.map((session) => session.track));
+  const sessionThemeOptions = [...sessions].sort((left, right) => Number(left.sessionNumber) - Number(right.sessionNumber));
+  const themes = sessionThemeOptions.map((session) => session.track);
   addOptions(dayFilter, unique(sessions.map((session) => session.dateLabel)));
-  addOptions(trackFilter, themes);
+  sessionThemeOptions.forEach((session) => {
+    const option = document.createElement("option");
+    option.value = session.track;
+    option.textContent = `S${session.sessionNumber}: ${session.track}`;
+    trackFilter.append(option);
+  });
   addOptions(roomFilter, unique(sessions.map((session) => session.room)));
 
   document.querySelector("#trackLegend").innerHTML = sessions
