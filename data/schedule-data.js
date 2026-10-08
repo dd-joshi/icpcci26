@@ -20,7 +20,7 @@
  * “EV Technology”, moved paper 35 to the first S3 slot and paper 23 to its
  * final slot, and added paper 271 to S7. Papers 222 and 144 were then added as
  * the final presentations in S7 and S9 respectively, bringing the program to
- * 77 unique papers. The organizer also supplied the plenary speakers, available
+ * 76 unique papers after paper 110 was removed from S3. The organizer also
  * topics, and venues; Plenary Talk 3 is confirmed in S101. See
  * ../README.md for maintenance rules.
  */
@@ -54,7 +54,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "8 October 2026, 2:00 PM IST"
+    "lastUpdated": "8 October 2026, 4:44 PM IST"
   },
   "announcements": [],
   "latestUpdates": [
@@ -457,6 +457,7 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 1 — 8 October 2026",
       "slot": "1:30–3:30 PM",
       "room": "S401",
+      "allowTimeGaps": true,
       "chairs": [
         {
           "name": "Dr. Soni Changlani",
@@ -487,16 +488,6 @@ window.ICPCCI_DATA = {
           "endTime": "2:00 PM",
           "visible": true,
           "order": 2
-        },
-        {
-          "paperId": 110,
-          "title": "A Single-Input Dual-Output DC–DC Converter with Adaptive Power Management and CC–CV Charging for EV Charging Stations",
-          "authors": "Nallamekala, Kiran*; Pranathi, Karra; Srivastava, Ankur; Kumar, Pravin; Pavani, Menda",
-          "track": "Energy Technology",
-          "startTime": "2:00 PM",
-          "endTime": "2:15 PM",
-          "visible": true,
-          "order": 3
         },
         {
           "paperId": 172,

@@ -141,7 +141,9 @@ if (data) {
         if (Number.isFinite(Number(data.site.minutesPerPaper)) && end - start !== Number(data.site.minutesPerPaper)) {
           fail(`${location} must use the configured ${data.site.minutesPerPaper}-minute presentation duration.`);
         }
-        if (previousPaperEnd !== null && start !== previousPaperEnd) {
+        if (previousPaperEnd !== null && start < previousPaperEnd) {
+          fail(`${location}.startTime overlaps the previous visible paper.`);
+        } else if (previousPaperEnd !== null && start > previousPaperEnd && session.allowTimeGaps !== true) {
           fail(`${location}.startTime must immediately follow the previous visible paper.`);
         }
         previousPaperEnd = end;
