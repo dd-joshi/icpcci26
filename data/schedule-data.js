@@ -21,8 +21,7 @@
  * final slot, and added paper 271 to S7. Papers 222 and 144 were then added as
  * the final presentations in S7 and S9 respectively, bringing the program to
  * 77 unique papers. The organizer also supplied the plenary speakers, available
- * topics, and venues; Plenary Talk 3
- * remains marked “To be announced” until its venue is confirmed. See
+ * topics, and venues; Plenary Talk 3 is confirmed in S101. See
  * ../README.md for maintenance rules.
  */
 window.ICPCCI_DATA = {
@@ -55,7 +54,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "8 October 2026, 9:58 AM IST"
+    "lastUpdated": "8 October 2026, 12:34 PM IST"
   },
   "announcements": [],
   "latestUpdates": [
@@ -63,6 +62,11 @@ window.ICPCCI_DATA = {
       "text": "Student participants must carry their institute ID cards.",
       "visible": true,
       "order": 1
+    },
+    {
+      "text": "Plenary Talk 3 venue: S101.",
+      "visible": true,
+      "order": 2
     }
   ],
   "guests": [],
@@ -182,7 +186,7 @@ window.ICPCCI_DATA = {
       "program": "Plenary Talk 3",
       "speaker": "Prof. Abhishek, IIT Kanpur",
       "topic": "Design of Heavy Lift Drones for High Altitude",
-      "location": "To be announced",
+      "location": "S101",
       "parallel": true,
       "note": "Runs in parallel with High Tea & Networking from 3:30–3:45 PM and the opening of Theme-Based Session 4 from 3:45–4:15 PM."
     },
