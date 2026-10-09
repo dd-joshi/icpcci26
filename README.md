@@ -26,6 +26,7 @@ The live technical program contains **76 unique papers in 10 theme-based session
 - Paper 57 is in Session 7 at **10:15–10:30 AM**, followed by paper 271 at **10:30–10:45 AM**. Paper 222 is the final Session 7 presentation at **10:45–11:00 AM**, in parallel with High Tea & Networking.
 - Paper 144 is the final Session 9 presentation at **3:15–3:30 PM**.
 - Dr. Ravi Bhandari is a Session 7 chair. Dr. Ajit Kumar is a Session 9 chair.
+- Dr. ANKUR BEOHAR, Senior Assistant Prof., VIT Bhopal, is a chair for both Sessions 5 and 10.
 - Papers 225, 23, and 247 are assigned only to Sessions 8, 3, and 9 respectively. Do not recreate their routing-note rows as duplicate presentations.
 - The site owner replaced every L205 session venue with **S401**. The Opening Ceremony is in **S101**, and the IEEE Student Branch Inauguration remains in **S401**.
 - Plenary Talks 1–3 take place on 8 October, followed by Plenary Talks 4–5 on 9 October. Plenary Talk 3 runs from **3:30–4:15 PM** in **S101**, in parallel with High Tea and the opening of Session 4. Plenary Talks 4–5 remain in **L405**.

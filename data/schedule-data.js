@@ -23,7 +23,7 @@
  * 76 unique papers after paper 110 was removed from S3. The organizer also
  * supplied the plenary speakers, available topics, and venues; Plenary Talk 3
  * is confirmed in S101. Day 2 S8, S10, and Plenary Talks 4–5 remain in L405.
- * See
+ * On 9 October, Dr. ANKUR BEOHAR was added as a chair for S5 and S10. See
  * ../README.md for maintenance rules.
  */
 window.ICPCCI_DATA = {
@@ -56,7 +56,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "9 October 2026, 9:20 AM IST"
+    "lastUpdated": "9 October 2026, 10:43 AM IST"
   },
   "announcements": [],
   "latestUpdates": [
@@ -664,6 +664,10 @@ window.ICPCCI_DATA = {
         {
           "name": "Dr. Rajesh Kumar Nema",
           "affiliation": "IES University"
+        },
+        {
+          "name": "Dr. ANKUR BEOHAR",
+          "affiliation": "Senior Assistant Prof., VIT Bhopal"
         }
       ],
       "papers": [
@@ -1197,6 +1201,10 @@ window.ICPCCI_DATA = {
         {
           "name": "Dr. Manjunath K.",
           "affiliation": "IITRAM"
+        },
+        {
+          "name": "Dr. ANKUR BEOHAR",
+          "affiliation": "Senior Assistant Prof., VIT Bhopal"
         }
       ],
       "papers": [
