@@ -22,8 +22,8 @@
  * the final presentations in S7 and S9 respectively, bringing the program to
  * 76 unique papers after paper 110 was removed from S3. The organizer also
  * supplied the plenary speakers, available topics, and venues; Plenary Talk 3
- * is confirmed in S101. On 9 October, S101 replaced every Day 2 use of L405,
- * including S8, S10, and Plenary Talks 4–5. See
+ * is confirmed in S101. Day 2 S8, S10, and Plenary Talks 4–5 remain in L405.
+ * See
  * ../README.md for maintenance rules.
  */
 window.ICPCCI_DATA = {
@@ -56,7 +56,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "9 October 2026, 9:15 AM IST"
+    "lastUpdated": "9 October 2026, 9:20 AM IST"
   },
   "announcements": [],
   "latestUpdates": [
@@ -69,11 +69,6 @@ window.ICPCCI_DATA = {
       "text": "Plenary Talk 3 venue: S101.",
       "visible": true,
       "order": 2
-    },
-    {
-      "text": "Day 2 venue changed from L405 to S101.",
-      "visible": true,
-      "order": 3
     }
   ],
   "guests": [],
@@ -221,7 +216,7 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 2 — 9 October 2026",
       "time": "8:45–10:45 AM",
       "program": "Theme-Based Sessions 7, 8",
-      "location": "L305, S101",
+      "location": "L305, L405",
       "technical": true
     },
     {
@@ -244,14 +239,14 @@ window.ICPCCI_DATA = {
       "time": "11:00–11:45 AM",
       "program": "Plenary Talk 4",
       "speaker": "Prof. Ragavan K., IIT Gandhinagar",
-      "location": "S101"
+      "location": "L405"
     },
     {
       "dateLabel": "Day 2 — 9 October 2026",
       "time": "11:45 AM–12:30 PM",
       "program": "Plenary Talk 5",
       "speaker": "Mr. Ramesh Devani, Director Engineering, ASIC at eInfochips (an Arrow company)",
-      "location": "S101"
+      "location": "L405"
     },
     {
       "dateLabel": "Day 2 — 9 October 2026",
@@ -263,7 +258,7 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 2 — 9 October 2026",
       "time": "1:30–3:30 PM",
       "program": "Theme-Based Sessions 9, 10",
-      "location": "L305, S101",
+      "location": "L305, L405",
       "technical": true
     },
     {
@@ -983,7 +978,7 @@ window.ICPCCI_DATA = {
       "date": "2026-10-09",
       "dateLabel": "Day 2 — 9 October 2026",
       "slot": "8:45–10:45 AM",
-      "room": "S101",
+      "room": "L405",
       "chairs": [
         {
           "name": "Ms. Supriya Anil Nair",
@@ -1193,7 +1188,7 @@ window.ICPCCI_DATA = {
       "date": "2026-10-09",
       "dateLabel": "Day 2 — 9 October 2026",
       "slot": "1:30–3:30 PM",
-      "room": "S101",
+      "room": "L405",
       "chairs": [
         {
           "name": "Dr. Chintan Mehta",

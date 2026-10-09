@@ -28,8 +28,8 @@ The live technical program contains **76 unique papers in 10 theme-based session
 - Dr. Ravi Bhandari is a Session 7 chair. Dr. Ajit Kumar is a Session 9 chair.
 - Papers 225, 23, and 247 are assigned only to Sessions 8, 3, and 9 respectively. Do not recreate their routing-note rows as duplicate presentations.
 - The site owner replaced every L205 session venue with **S401**. The Opening Ceremony is in **S101**, and the IEEE Student Branch Inauguration remains in **S401**.
-- Plenary Talks 1–3 take place on 8 October, followed by Plenary Talks 4–5 on 9 October. Plenary Talk 3 runs from **3:30–4:15 PM** in **S101**, in parallel with High Tea and the opening of Session 4. Plenary Talks 4–5 are also in **S101**.
-- On Day 2, **S101** replaces every previous **L405** venue. This applies to Sessions 8 and 10, their agenda rows, and Plenary Talks 4–5. Day 1 L405 venues remain unchanged.
+- Plenary Talks 1–3 take place on 8 October, followed by Plenary Talks 4–5 on 9 October. Plenary Talk 3 runs from **3:30–4:15 PM** in **S101**, in parallel with High Tea and the opening of Session 4. Plenary Talks 4–5 remain in **L405**.
+- On Day 2, Sessions 8 and 10 remain in **L405**. Their combined agenda rows use **L305, L405**.
 - Session 5 runs **3:45–6:15 PM** so its 10 papers retain 15-minute presentation slots.
 - Presentation-mode information is internal operational data. Do not copy it into the public data file, page, print layout, labels, chair details, or documentation examples.
 - Do not regroup papers by their older discipline labels. The current public program uses the theme-based session titles stored on each session and paper.
