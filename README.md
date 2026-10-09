@@ -6,7 +6,7 @@ This is a dependency-free static conference website. It can be opened directly f
 
 **Edit conference content in `data/schedule-data.js`.** Do not duplicate conference details in `index.html` or `assets/app.js`.
 
-- `data/schedule-data.js` is the single source of truth for conference details, announcements, latest updates, guests, presenter notes, partners, agenda items, sessions, and papers.
+- `data/schedule-data.js` is the single source of truth for conference details, announcements, latest updates, the post-event opening message, guests, presenter notes, partners, agenda items, sessions, and papers.
 - `index.html` contains structural containers and accessibility markup.
 - `assets/app.js` renders the data and provides search, filters, and tabs.
 - `assets/styles.css` controls presentation and responsive layout.
@@ -36,6 +36,30 @@ The live technical program contains **76 unique papers in 10 theme-based session
 - Do not regroup papers by their older discipline labels. The current public program uses the theme-based session titles stored on each session and paper.
 
 ## Common updates
+
+### Change or disable the post-event opening screen
+
+Edit the `closingMessage` object. Its title, message, acknowledgement groups, button label, and footnote are rendered in the opening dialog.
+
+```js
+"closingMessage": {
+  "visible": true,
+  "eyebrow": "ICPCCI 2026 · Conference concluded",
+  "title": "Thank you for being part of ICPCCI 2026.",
+  "message": "The conference has concluded.",
+  "groups": [
+    {
+      "label": "Participants & authors",
+      "text": "Thank you for sharing your research, ideas, and enthusiasm.",
+      "order": 1
+    }
+  ],
+  "buttonLabel": "View conference website",
+  "footnote": "The complete conference schedule remains available for reference."
+}
+```
+
+Set `closingMessage.visible` to `false` when the opening screen is no longer needed. Keep the screen generic unless the organizer supplies approved post-event wording.
 
 ### Change the venue, dates, contact, or official link
 

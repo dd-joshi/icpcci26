@@ -77,6 +77,20 @@ if (data) {
   if (!Array.isArray(data.guests)) fail("guests must be an array.");
   if (!Array.isArray(data.partners)) fail("partners must be an array.");
 
+  if (data.closingMessage && data.closingMessage.visible !== false) {
+    ["eyebrow", "title", "message", "buttonLabel", "footnote"].forEach((key) => {
+      requireText(data.closingMessage, key, "closingMessage");
+    });
+    if (!Array.isArray(data.closingMessage.groups) || data.closingMessage.groups.length === 0) {
+      fail("closingMessage.groups must be a non-empty array when the opening screen is visible.");
+    }
+    (data.closingMessage.groups || []).forEach((group, index) => {
+      if (group.visible === false) return;
+      requireText(group, "label", `closingMessage.groups[${index}]`);
+      requireText(group, "text", `closingMessage.groups[${index}]`);
+    });
+  }
+
   const paperIds = new Set();
   (data.latestUpdates || []).forEach((item, index) => {
     if (item.visible === false) return;
