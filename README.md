@@ -15,7 +15,7 @@ The page remains fully static. There is no database, build step, or runtime back
 
 ## Current technical-program authority
 
-The live technical program contains **76 unique papers in 10 theme-based sessions**. Session names, chairs, paper allocation, and paper sequence follow the organizer-supplied workbook `5oct.xlsx`, confirmed on 6 October 2026, plus the site owner's corrections confirmed through 8 October 2026. Rows without a paper title or presentation mode are routing notes and are not counted as presentations. Complete author lists come from the accepted-paper export `Papers (7).xlsx` and later organizer-supplied additions. The website assigns 15-minute presentation times in the listed paper order.
+The live technical program contains **76 unique papers in 10 theme-based sessions**. Session names, chairs, paper allocation, and paper sequence follow the organizer-supplied workbook `5oct.xlsx`, confirmed on 6 October 2026, plus the site owner's corrections confirmed through 9 October 2026. Rows without a paper title or presentation mode are routing notes and are not counted as presentations. Complete author lists come from the accepted-paper export `Papers (7).xlsx` and later organizer-supplied additions. The website assigns 15-minute presentation times in the listed paper order.
 
 - Keep paper 237 titled **“Design and Performance Analysis of a Minimized-Switch Multilevel Inverter with Advanced PWM Control for Grid-Connected Renewable Energy Applications”** unless the site owner supplies a newer correction.
 - The site owner moved paper 224 to Session 8 on 9 October and confirmed its author as **P, Elangovan\***. Its current scheduled time is 10:00–10:15 AM. This explicit correction overrides its earlier PDF placement in Session 3.
@@ -28,7 +28,8 @@ The live technical program contains **76 unique papers in 10 theme-based session
 - Dr. Ravi Bhandari is a Session 7 chair. Dr. Ajit Kumar is a Session 9 chair.
 - Papers 225, 23, and 247 are assigned only to Sessions 8, 3, and 9 respectively. Do not recreate their routing-note rows as duplicate presentations.
 - The site owner replaced every L205 session venue with **S401**. The Opening Ceremony is in **S101**, and the IEEE Student Branch Inauguration remains in **S401**.
-- Plenary Talks 1–3 take place on 8 October, followed by Plenary Talks 4–5 on 9 October. Plenary Talk 3 runs from **3:30–4:15 PM** in **S101**, in parallel with High Tea and the opening of Session 4.
+- Plenary Talks 1–3 take place on 8 October, followed by Plenary Talks 4–5 on 9 October. Plenary Talk 3 runs from **3:30–4:15 PM** in **S101**, in parallel with High Tea and the opening of Session 4. Plenary Talks 4–5 are also in **S101**.
+- On Day 2, **S101** replaces every previous **L405** venue. This applies to Sessions 8 and 10, their agenda rows, and Plenary Talks 4–5. Day 1 L405 venues remain unchanged.
 - Session 5 runs **3:45–6:15 PM** so its 10 papers retain 15-minute presentation slots.
 - Presentation-mode information is internal operational data. Do not copy it into the public data file, page, print layout, labels, chair details, or documentation examples.
 - Do not regroup papers by their older discipline labels. The current public program uses the theme-based session titles stored on each session and paper.
