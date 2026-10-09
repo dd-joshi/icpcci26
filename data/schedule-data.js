@@ -5,7 +5,7 @@
  * Arrays are displayed in their written order unless an item has an `order`
  * number. Set `visible: false` to hide an item without deleting it.
  *
- * SCHEDULE AUTHORITY (8 OCTOBER 2026)
+ * SCHEDULE AUTHORITY (9 OCTOBER 2026)
  * The original allocation, order, chairs, and venues follow 5oct.xlsx with
  * routing-placeholder rows removed. The workbook's internal presentation-mode
  * column is deliberately excluded from this public website and its printouts.
@@ -21,7 +21,9 @@
  * final slot, and added paper 271 to S7. Papers 222 and 144 were then added as
  * the final presentations in S7 and S9 respectively, bringing the program to
  * 76 unique papers after paper 110 was removed from S3. The organizer also
- * topics, and venues; Plenary Talk 3 is confirmed in S101. See
+ * supplied the plenary speakers, available topics, and venues; Plenary Talk 3
+ * is confirmed in S101. On 9 October, S101 replaced every Day 2 use of L405,
+ * including S8, S10, and Plenary Talks 4–5. See
  * ../README.md for maintenance rules.
  */
 window.ICPCCI_DATA = {
@@ -54,7 +56,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "8 October 2026, 4:44 PM IST"
+    "lastUpdated": "9 October 2026, 9:15 AM IST"
   },
   "announcements": [],
   "latestUpdates": [
@@ -67,6 +69,11 @@ window.ICPCCI_DATA = {
       "text": "Plenary Talk 3 venue: S101.",
       "visible": true,
       "order": 2
+    },
+    {
+      "text": "Day 2 venue changed from L405 to S101.",
+      "visible": true,
+      "order": 3
     }
   ],
   "guests": [],
@@ -214,7 +221,7 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 2 — 9 October 2026",
       "time": "8:45–10:45 AM",
       "program": "Theme-Based Sessions 7, 8",
-      "location": "L305, L405",
+      "location": "L305, S101",
       "technical": true
     },
     {
@@ -237,14 +244,14 @@ window.ICPCCI_DATA = {
       "time": "11:00–11:45 AM",
       "program": "Plenary Talk 4",
       "speaker": "Prof. Ragavan K., IIT Gandhinagar",
-      "location": "L405"
+      "location": "S101"
     },
     {
       "dateLabel": "Day 2 — 9 October 2026",
       "time": "11:45 AM–12:30 PM",
       "program": "Plenary Talk 5",
       "speaker": "Mr. Ramesh Devani, Director Engineering, ASIC at eInfochips (an Arrow company)",
-      "location": "L405"
+      "location": "S101"
     },
     {
       "dateLabel": "Day 2 — 9 October 2026",
@@ -256,7 +263,7 @@ window.ICPCCI_DATA = {
       "dateLabel": "Day 2 — 9 October 2026",
       "time": "1:30–3:30 PM",
       "program": "Theme-Based Sessions 9, 10",
-      "location": "L305, L405",
+      "location": "L305, S101",
       "technical": true
     },
     {
@@ -976,7 +983,7 @@ window.ICPCCI_DATA = {
       "date": "2026-10-09",
       "dateLabel": "Day 2 — 9 October 2026",
       "slot": "8:45–10:45 AM",
-      "room": "L405",
+      "room": "S101",
       "chairs": [
         {
           "name": "Ms. Supriya Anil Nair",
@@ -1186,7 +1193,7 @@ window.ICPCCI_DATA = {
       "date": "2026-10-09",
       "dateLabel": "Day 2 — 9 October 2026",
       "slot": "1:30–3:30 PM",
-      "room": "L405",
+      "room": "S101",
       "chairs": [
         {
           "name": "Dr. Chintan Mehta",
