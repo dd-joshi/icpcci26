@@ -12,6 +12,25 @@
   <!-- AI maintainers: edit conference content in data/schedule-data.js. See README.md. -->
   <a class="skip-link" href="#program">Skip to program</a>
 
+  <!-- Post-event welcome screen. Copy and visibility come from data/schedule-data.js. -->
+  <dialog class="closing-dialog" id="closingMessageDialog" aria-labelledby="closingMessageTitle" aria-describedby="closingMessageText">
+    <div class="closing-panel">
+      <div class="closing-brand">
+        <img id="closingMessageLogo" src="assets/iitram-logo.png" alt="">
+        <span id="closingMessageEvent"></span>
+      </div>
+      <p class="closing-eyebrow" id="closingMessageEyebrow"></p>
+      <h2 id="closingMessageTitle"></h2>
+      <p class="closing-copy" id="closingMessageText"></p>
+      <div class="closing-thanks" id="closingMessageGroups" aria-label="Acknowledgements"></div>
+      <button class="closing-dismiss" id="closingMessageDismiss" type="button" autofocus>
+        <span id="closingMessageButtonLabel"></span>
+        <span aria-hidden="true">→</span>
+      </button>
+      <p class="closing-footnote" id="closingMessageFootnote"></p>
+    </div>
+  </dialog>
+
   <header class="site-header">
     <div class="brand-row shell">
       <a class="conference-mark" id="conferenceMark" href="#" target="_blank" rel="noreferrer">

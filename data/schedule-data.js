@@ -23,8 +23,9 @@
  * 76 unique papers after paper 110 was removed from S3. The organizer also
  * supplied the plenary speakers, available topics, and venues; Plenary Talk 3
  * is confirmed in S101. Day 2 S8, S10, and Plenary Talks 4–5 remain in L405.
- * On 9 October, Dr. ANKUR BEOHAR was added as a chair for S5 and S10. See
- * ../README.md for maintenance rules.
+ * On 9 October, Dr. ANKUR BEOHAR was added as a chair for S5 and S10. The
+ * conference has now concluded, and the post-event thank-you screen is enabled.
+ * See ../README.md for maintenance rules.
  */
 window.ICPCCI_DATA = {
   "site": {
@@ -56,7 +57,7 @@ window.ICPCCI_DATA = {
     "venueShort": "IITRAM, Ahmedabad",
     "contact": "icpcci2026@iitram.ac.in",
     "officialSite": "https://iitram.in/icpcci26/",
-    "lastUpdated": "9 October 2026, 10:43 AM IST"
+    "lastUpdated": "9 October 2026, 5:09 PM IST"
   },
   "announcements": [],
   "latestUpdates": [
@@ -71,6 +72,36 @@ window.ICPCCI_DATA = {
       "order": 2
     }
   ],
+  "closingMessage": {
+    "visible": true,
+    "eyebrow": "ICPCCI 2026 · Conference concluded",
+    "title": "Thank you for being part of ICPCCI 2026.",
+    "message": "The conference has concluded. We are grateful to everyone who contributed their time, knowledge, support, and energy.",
+    "groups": [
+      {
+        "label": "Participants & authors",
+        "text": "Thank you for sharing your research, ideas, and enthusiasm.",
+        "order": 1
+      },
+      {
+        "label": "Session chairs",
+        "text": "Thank you for guiding thoughtful and engaging technical discussions.",
+        "order": 2
+      },
+      {
+        "label": "Sponsors & partners",
+        "text": "Thank you for your generous support and valued collaboration.",
+        "order": 3
+      },
+      {
+        "label": "Volunteers & organizing team",
+        "text": "Thank you for the dedication and care that made the event possible.",
+        "order": 4
+      }
+    ],
+    "buttonLabel": "View conference website",
+    "footnote": "The complete conference schedule remains available for reference."
+  },
   "guests": [],
   "presenter": {
     "eyebrow": "For presenters",

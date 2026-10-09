@@ -43,6 +43,48 @@
       .map(({ item }) => item);
   }
 
+  function renderClosingMessage() {
+    const message = data.closingMessage || {};
+    const dialog = document.querySelector("#closingMessageDialog");
+    if (!dialog) return;
+
+    if (message.visible === false || !message.title) {
+      dialog.hidden = true;
+      return;
+    }
+
+    const logo = document.querySelector("#closingMessageLogo");
+    logo.src = site.logo || "assets/iitram-logo.png";
+    setText("#closingMessageEvent", conference.shortTitle || site.brandName || "Conference");
+    setText("#closingMessageEyebrow", message.eyebrow);
+    setText("#closingMessageTitle", message.title);
+    setText("#closingMessageText", message.message);
+    setText("#closingMessageButtonLabel", message.buttonLabel || "View conference website");
+    setText("#closingMessageFootnote", message.footnote);
+
+    document.querySelector("#closingMessageGroups").innerHTML = orderedVisible(message.groups).map((group) => `
+      <article class="closing-thanks-item">
+        <strong>${escapeHtml(group.label)}</strong>
+        <span>${escapeHtml(group.text)}</span>
+      </article>
+    `).join("");
+
+    const releasePage = () => document.body.classList.remove("closing-message-open");
+    const dismiss = document.querySelector("#closingMessageDismiss");
+    dismiss.addEventListener("click", () => {
+      if (typeof dialog.close === "function") dialog.close();
+      else {
+        dialog.removeAttribute("open");
+        releasePage();
+      }
+    }, { once: true });
+    dialog.addEventListener("close", releasePage, { once: true });
+
+    document.body.classList.add("closing-message-open");
+    if (typeof dialog.showModal === "function") dialog.showModal();
+    else dialog.setAttribute("open", "");
+  }
+
   const sessions = orderedVisible(data.sessions).map((session) => ({
     ...session,
     papers: orderedVisible(session.papers),
@@ -416,4 +458,5 @@
   renderSiteContent();
   renderAgenda();
   render();
+  renderClosingMessage();
 })();
